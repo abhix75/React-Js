@@ -2960,9 +2960,26 @@ const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 //-->class Based component
 //functional component
 const HeaderComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: " Namaste React from Functional Component"
-    }, void 0, false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: " Namaste React from Functional Component"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 12,
+                columnNumber: 16
+            }, undefined),
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "This functional component from h2 tag"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 12,
+                columnNumber: 66
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "App.js",
         lineNumber: 12,
         columnNumber: 10

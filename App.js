@@ -12,7 +12,7 @@ const heading =(
 
 //functional component
 const HeaderComponent = () => {
-    return <h1> Namaste React from Functional Component</h1>;
+    return <div> <h1> Namaste React from Functional Component</h1> <h2>This functional component from h2 tag</h2></div>
 }
 
 console.log(heading);
