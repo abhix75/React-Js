@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "welcome to react",
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "Abhijit",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.22.8",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.9.3",
     "process": "^0.11.10"
   },
