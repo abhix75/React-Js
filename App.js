@@ -1,27 +1,25 @@
 import React from "react";
-import  ReactDOM  from "react-dom/client";
- 
-const Title = () =>(
-    <h1 id='title' key='h1'>
-        Namaste React
-    </h1>
-)
+import ReactDOM from "react-dom/client";
+
+const Title = () => (
+  <h1 id="title" key="h1">
+    Namaste React
+  </h1>
+);
 //Components
 //-->Functional component
 //-->class Based component
 
 //functional component
 const HeaderComponent = () => (
-    <div>
-
-    <Title />
-     <h1> Namaste React from Functional Component</h1>
+  <div>
+    {Title()}
+    <h1> Namaste React from Functional Component</h1>
     <h2>This functional component from h2 tag</h2>
-    </div>
-)
-
+  </div>
+);
 
 console.log(heading);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeaderComponent/>);
+root.render(<HeaderComponent />);
