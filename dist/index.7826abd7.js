@@ -2962,21 +2962,19 @@ const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 const HeaderComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            " ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: " Namaste React from Functional Component"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 12,
-                columnNumber: 16
+                lineNumber: 13,
+                columnNumber: 6
             }, undefined),
-            " ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "This functional component from h2 tag"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 12,
-                columnNumber: 66
+                lineNumber: 14,
+                columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
@@ -2989,7 +2987,7 @@ _c = HeaderComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 15,
+    lineNumber: 18,
     columnNumber: 13
 }, undefined));
 var _c;
