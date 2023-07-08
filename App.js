@@ -1,33 +1,44 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
-const heading = React.createElement(
-    "h1",
-    {
-        id: 'title',
-        key:"h1"
-    }
-    ,
-    "heading 1!"
-);
-const heading2 = React.createElement(
-    "h2",
-    {
-        id: 'title',
-        key:"h2"
-    }
-    ,
-    "heading 2"
-);
+ 
 
-const container = React.createElement(
+const heading = React.createElement(
     "div",
     {
         id:"container",
     },
-    [heading,heading2]
+    [
+        React.createElement(
+        "h1",
+        {
+            id: 'title',
+            key:"h1"
+        }
+        ,
+        "Namaste React"
+    ), 
+    React.createElement(
+        "h2",
+        {
+            id: 'title',
+            key:"h2"
+        }
+        ,
+        "Namaste React 2"
+    ),
+    React.createElement(
+        "h3",
+        {
+            id: 'title',
+            key:"h3"
+        }
+        ,
+        "Namaste React 3"
+    )
+    ]
 );
 
 console.log(heading);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(container);
+root.render(heading);
