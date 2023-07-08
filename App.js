@@ -1,7 +1,7 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
  
-const heading =(
+const Title = () =>(
     <h1 id='title' key='h1'>
         Namaste React
     </h1>
@@ -14,7 +14,7 @@ const heading =(
 const HeaderComponent = () => (
     <div>
 
-    {heading}
+    <Title />
      <h1> Namaste React from Functional Component</h1>
     <h2>This functional component from h2 tag</h2>
     </div>
