@@ -13,6 +13,8 @@ const heading =(
 //functional component
 const HeaderComponent = () => (
     <div>
+
+    {heading}
      <h1> Namaste React from Functional Component</h1>
     <h2>This functional component from h2 tag</h2>
     </div>
