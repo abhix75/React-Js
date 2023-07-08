@@ -6,6 +6,8 @@ const Title = () => (
     Namaste React
   </h1>
 );
+
+var XYZ=10;
 //Components
 //-->Functional component
 //-->class Based component
@@ -13,7 +15,7 @@ const Title = () => (
 //functional component
 const HeaderComponent = () => (
   <div>
-    {Title()}
+    {XYZ}
     <h1> Namaste React from Functional Component</h1>
     <h2>This functional component from h2 tag</h2>
   </div>
