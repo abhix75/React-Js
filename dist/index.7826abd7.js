@@ -2959,35 +2959,33 @@ const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 //-->Functional component
 //-->class Based component
 //functional component
-const HeaderComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+const HeaderComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: " Namaste React from Functional Component"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 13,
+                lineNumber: 12,
                 columnNumber: 6
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "This functional component from h2 tag"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 14,
+                lineNumber: 13,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 12,
-        columnNumber: 10
+        lineNumber: 11,
+        columnNumber: 31
     }, undefined);
-};
 _c = HeaderComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 18,
+    lineNumber: 16,
     columnNumber: 13
 }, undefined));
 var _c;
