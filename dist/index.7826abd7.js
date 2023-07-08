@@ -2947,52 +2947,36 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-// const heading = React.createElement(
-//     "div",
-//     {
-//         id:"container",
-//     },
-//     [
-//         React.createElement(
-//         "h1",
-//         {
-//             id: 'title',
-//             key:"h1"
-//         }
-//         ,
-//         "Namaste React"
-//     ), 
-//     React.createElement(
-//         "h2",
-//         {
-//             id: 'title',
-//             key:"h2"
-//         }
-//         ,
-//         "Namaste React 2"
-//     ),
-//     React.createElement(
-//         "h3",
-//         {
-//             id: 'title',
-//             key:"h3"
-//         }
-//         ,
-//         "Namaste React 3"
-//     )
-//     ]
-// );
-// same code using JSX
 const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     id: "title",
     children: "Namaste React"
 }, "h1", false, {
     fileName: "App.js",
-    lineNumber: 42,
+    lineNumber: 3,
     columnNumber: 17
 }, undefined);
+//Components
+//-->Functional component
+//-->class Based component
+//functional component
+const HeaderComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: " Namaste React from Functional Component"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 12,
+        columnNumber: 10
+    }, undefined);
+};
+_c = HeaderComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 15,
+    columnNumber: 13
+}, undefined));
+var _c;
+$RefreshReg$(_c, "HeaderComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
