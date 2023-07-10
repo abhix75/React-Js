@@ -1809,10 +1809,10 @@ const RestaurantCard = () =>{
     <div className="card">
       <img 
       src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"
-      + RestaurantList[3].data.cloudinaryImageId}/>
-      <h2>{RestaurantList[3].data?.name}</h2>
-      <h3>{RestaurantList[3].data?.cuisines.join(", ")}</h3>
-      <h4>{RestaurantList[3].data?.avgRating} star</h4>
+      + RestaurantList[6].data.cloudinaryImageId}/>
+      <h2>{RestaurantList[6].data?.name}</h2>
+      <h3>{RestaurantList[6].data?.cuisines.join(", ")}</h3>
+      <h4>{RestaurantList[6].data?.avgRating} star</h4>
     </div>
   )
 
@@ -1821,27 +1821,22 @@ const RestaurantCard = () =>{
 const Body = () => {
   return (
     <div className="Restaurant-List">
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
+      <RestaurantCard  restaurant = {RestaurantList[0]}/>
+      <RestaurantCard  restaurant = {RestaurantList[1]}/>
+      <RestaurantCard  restaurant = {RestaurantList[2]}/>
+      <RestaurantCard  restaurant = {RestaurantList[3]}/>
+      <RestaurantCard  restaurant = {RestaurantList[4]}/>
+      <RestaurantCard  restaurant = {RestaurantList[5]}/>
+      <RestaurantCard  restaurant = {RestaurantList[6]}/>
+      <RestaurantCard  restaurant = {RestaurantList[7]}/>
+      <RestaurantCard  restaurant = {RestaurantList[8]}/>
+      <RestaurantCard  restaurant = {RestaurantList[9]}/>
+      <RestaurantCard  restaurant = {RestaurantList[10]}/>
+      <RestaurantCard  restaurant = {RestaurantList[11]}/>
+      <RestaurantCard  restaurant = {RestaurantList[12]}/>
+      <RestaurantCard  restaurant = {RestaurantList[13]}/>
+      <RestaurantCard  restaurant = {RestaurantList[14]}/>
+      <RestaurantCard  restaurant = {RestaurantList[15]}/>
     </div>
   )
 }
