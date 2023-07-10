@@ -1613,21 +1613,12 @@ const RestaurantCard = ({
 const Body = () => {
   return (
     <div className="Restaurant-List">
-      <RestaurantCard {...RestaurantList[0].data} />
-      <RestaurantCard {...RestaurantList[1].data} />
-      <RestaurantCard {...RestaurantList[2].data} />
-      <RestaurantCard {...RestaurantList[3].data} />
-      <RestaurantCard {...RestaurantList[4].data} />
-      <RestaurantCard {...RestaurantList[5].data} />
-      <RestaurantCard {...RestaurantList[6].data} />
-      <RestaurantCard {...RestaurantList[7].data} />
-      <RestaurantCard {...RestaurantList[8].data} />
-      <RestaurantCard {...RestaurantList[9].data} />
-      <RestaurantCard {...RestaurantList[10].data} />
-      <RestaurantCard {...RestaurantList[11].data} />
-      <RestaurantCard {...RestaurantList[12].data} />
-      <RestaurantCard {...RestaurantList[13].data} />
-      <RestaurantCard {...RestaurantList[14].data} />
+  {
+    RestaurantList.map((restaurant)=>
+    {
+      return <RestaurantCard {...restaurant.data}/>
+    })
+  }
     </div>
   );
 };
