@@ -33,13 +33,95 @@ const HeaderComponent = () => (
 
 //Body
 
-const DailySushi = {
 
-  name:"Daily Sushi",
-  image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
-  cusines:["Japanesh","Ashian","Korean"],
-  rating:"4.2",
-}
+
+//CONFIG DRIVEN UI
+
+const config =[
+  {
+    type:"carsual",
+    cards:[
+      {
+        OfferName:"50% OFF"
+      },
+      {
+        OfferName:"No Delivery Charge"
+      }
+    ]
+  },
+  {
+    type:"Restaurants",
+    cards:[
+      {
+        name:"Daily Sushi",
+        image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+        cusines:["Japanesh","Ashian","Korean"],
+        rating:"4.2",
+      },
+      {
+        name:"KFC",
+        image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+        cusines:["Japanesh","Ashian","Korean"],
+        rating:"4.2",
+      },
+      {
+        name:"PIZZA HUT",
+        image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+        cusines:["Japanesh","Ashian","Korean"],
+        rating:"4.2",
+      },
+      {
+        name:"LELE",
+        image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+        cusines:["Japanesh","Ashian","Korean"],
+        rating:"4.2",
+      },
+    ]
+  }
+]
+
+//ABOVE IS THE STRUCTURE OF CONFIG DRIVEN UI
+
+
+const RestaurantList =[
+  {
+    name:"Daily Sushi",
+    image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+    cusines:["Japanesh","Ashian","Korean"],
+    rating:"4.2",
+  },
+  {
+    name:"Daily Sushi",
+    image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+    cusines:["Japanesh","Ashian","Korean"],
+    rating:"4.2",
+  },
+  {
+    name:"Daily Sushi",
+    image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+    cusines:["Japanesh","Ashian","Korean"],
+    rating:"4.2",
+  },
+  {
+    name:"Daily Sushi",
+    image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+    cusines:["Japanesh","Ashian","Korean"],
+    rating:"4.2",
+  },
+  {
+    name:"Daily Sushi",
+    image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+    cusines:["Japanesh","Ashian","Korean"],
+    rating:"4.2",
+  },
+  {
+    name:"Daily Sushi",
+    image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+    cusines:["Japanesh","Ashian","Korean"],
+    rating:"4.2",
+  },
+] 
+
 
 const RestaurantCard = () =>{
   return(
