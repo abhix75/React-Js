@@ -44,11 +44,13 @@ const Footer = () => {
 
 const AppLayout = () =>{
   return (
-    <div className="jsx">
+    <>
     <HeaderComponent/>
-    <Body/>
-    <Footer/>
-    </div>
+         <>
+        <Body/>
+        <Footer/>
+         </>
+    </>
   
   )
 }
