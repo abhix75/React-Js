@@ -22,4 +22,15 @@
   background-color: azure;
 }
 
+.card {
+  border: 1px solid #000;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card > img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

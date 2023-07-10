@@ -33,8 +33,25 @@ const HeaderComponent = () => (
 
 //Body
 
+
+const RestaurantCard = () =>{
+  return(
+    <div className="card">
+      <img alt="Daily Sushi" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju"/>
+      <h2>Daily Sushi</h2>
+      <h3>Japanesh,Ashian,Korean</h3>
+      <h4>4.2 star</h4>
+    </div>
+  )
+
+}
+
 const Body = () => {
-  return <h4>body</h4>
+  return (
+    <div>
+      <RestaurantCard/>
+    </div>
+  )
 }
 
 const Footer = () => {
@@ -46,10 +63,8 @@ const AppLayout = () =>{
   return (
     <>
     <HeaderComponent/>
-         <>
-        <Body/>
-        <Footer/>
-         </>
+    <Body/>
+    <Footer/>  
     </>
   
   )
