@@ -44,9 +44,12 @@ const Footer = () => {
 
 const AppLayout = () =>{
   return (
+    <div>
     <HeaderComponent/>
     <Body/>
     <Footer/>
+    </div>
+  
   )
 }
 
