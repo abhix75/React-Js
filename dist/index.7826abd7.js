@@ -4614,21 +4614,21 @@ const RestaurantCard = (props)=>{
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + RestaurantList[6].data.cloudinaryImageId
+                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + props.restaurant.data.cloudinaryImageId
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 1459,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: RestaurantList[6].data?.name
+                children: props.restaurant.data?.name
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 1460,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: RestaurantList[6].data?.cuisines.join(", ")
+                children: props.restaurant.data?.cuisines.join(", ")
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 1461,
@@ -4636,7 +4636,7 @@ const RestaurantCard = (props)=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
-                    RestaurantList[6].data?.avgRating,
+                    props.restaurant.data?.avgRating,
                     " star"
                 ]
             }, void 0, true, {
@@ -4656,7 +4656,13 @@ const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "Restaurant-List",
         children: [
-            RestaurantCard(RestaurantList[0]),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: RestaurantList[0]
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 1467,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
                 restaurant: RestaurantList[1]
             }, void 0, false, {
@@ -4754,13 +4760,6 @@ const Body = ()=>{
                 fileName: "App.js",
                 lineNumber: 1481,
                 columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: RestaurantList[15]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 1482,
-                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
@@ -4775,7 +4774,7 @@ const Footer = ()=>{
         children: "footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 1486,
+        lineNumber: 1485,
         columnNumber: 10
     }, undefined);
 };
@@ -4785,17 +4784,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 1490,
+                lineNumber: 1489,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 1491,
+                lineNumber: 1490,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 1492,
+                lineNumber: 1491,
                 columnNumber: 5
             }, undefined)
         ]
@@ -4805,7 +4804,7 @@ _c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 1496,
+    lineNumber: 1495,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;

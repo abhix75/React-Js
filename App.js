@@ -1810,10 +1810,10 @@ const RestaurantCard = (props) =>{
     <div className="card">
       <img 
       src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"
-      + RestaurantList[6].data.cloudinaryImageId}/>
-      <h2>{RestaurantList[6].data?.name}</h2>
-      <h3>{RestaurantList[6].data?.cuisines.join(", ")}</h3>
-      <h4>{RestaurantList[6].data?.avgRating} star</h4>
+      + props.restaurant.data.cloudinaryImageId}/>
+      <h2>{props.restaurant.data?.name}</h2>
+      <h3>{props.restaurant.data?.cuisines.join(", ")}</h3>
+      <h4>{props.restaurant.data?.avgRating} star</h4>
     </div>
   )
 
@@ -1822,7 +1822,7 @@ const RestaurantCard = (props) =>{
 const Body = () => {
   return (
     <div className="Restaurant-List">
-      {RestaurantCard   (RestaurantList[0])}
+      <RestaurantCard  restaurant = {RestaurantList[0]}/>
       <RestaurantCard  restaurant = {RestaurantList[1]}/>
       <RestaurantCard  restaurant = {RestaurantList[2]}/>
       <RestaurantCard  restaurant = {RestaurantList[3]}/>
@@ -1837,7 +1837,6 @@ const Body = () => {
       <RestaurantCard  restaurant = {RestaurantList[12]}/>
       <RestaurantCard  restaurant = {RestaurantList[13]}/>
       <RestaurantCard  restaurant = {RestaurantList[14]}/>
-      <RestaurantCard  restaurant = {RestaurantList[15]}/>
     </div>
   )
 }
