@@ -3048,7 +3048,7 @@ const Footer = ()=>{
 };
 _c3 = Footer;
 const AppLayout = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "App.js",
@@ -3066,11 +3066,7 @@ const AppLayout = ()=>{
                 columnNumber: 5
             }, undefined)
         ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 34,
-        columnNumber: 10
-    }, undefined);
+    }, void 0, true);
 };
 _c4 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));

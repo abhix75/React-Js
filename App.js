@@ -44,11 +44,11 @@ const Footer = () => {
 
 const AppLayout = () =>{
   return (
-    <React.Fragment>
+    <>
     <HeaderComponent/>
     <Body/>
     <Footer/>
-    </React.Fragment>
+    </>
   
   )
 }
