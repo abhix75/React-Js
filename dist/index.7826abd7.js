@@ -4609,7 +4609,7 @@ const RestaurantList = [
         "subtype": "basic"
     }
 ];
-const RestaurantCard = ()=>{
+const RestaurantCard = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [

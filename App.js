@@ -1804,7 +1804,8 @@ const RestaurantList =[
 ] 
 
 
-const RestaurantCard = () =>{
+const RestaurantCard = (props) =>{
+  console.log(props)
   return(
     <div className="card">
       <img 
