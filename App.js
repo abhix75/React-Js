@@ -40,13 +40,13 @@ const Body = () => {
 const Footer = () => {
   return <h4>footer</h4>
 }
-const styleObj = {
-  backgroundColor: "brown",
-}
+
 
 const AppLayout = () =>{
   return (
-    <div style={styleObj}>
+    <div style ={{
+      backgroundColor: "brown",
+    }}>
     <HeaderComponent/>
     <Body/>
     <Footer/>

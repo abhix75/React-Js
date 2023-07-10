@@ -3047,32 +3047,31 @@ const Footer = ()=>{
     }, undefined);
 };
 _c3 = Footer;
-const styleObj = {
-    backgroundColor: "brown"
-};
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: styleObj,
+        style: {
+            backgroundColor: "brown"
+        },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 38,
+                lineNumber: 37,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 40,
+                lineNumber: 39,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 37,
+        lineNumber: 34,
         columnNumber: 10
     }, undefined);
 };
@@ -3080,7 +3079,7 @@ _c4 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 44,
+    lineNumber: 43,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4;
