@@ -1805,14 +1805,16 @@ const RestaurantList =[
 
 
 const RestaurantCard = ({restaurant}) =>{
+
+  const {name,cuisines,cloudinaryImageId,avgRating} = restaurant.data
   return(
     <div className="card">
       <img 
       src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"
-      + restaurant.data?.cloudinaryImageId}/>
-      <h2>{restaurant.data?.name}</h2>
-      <h3>{restaurant.data?.cuisines.join(", ")}</h3>
-      <h4>{restaurant.data?.avgRating} star</h4>
+      + cloudinaryImageId}/>
+      <h2>{name}</h2>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{avgRating} star</h4>
     </div>
   )
 
