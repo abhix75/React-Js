@@ -33,14 +33,21 @@ const HeaderComponent = () => (
 
 //Body
 
+const DailySushi = {
+
+  name:"Daily Sushi",
+  image:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+  cusines:["Japanesh","Ashian","Korean"],
+  rating:"4.2",
+}
 
 const RestaurantCard = () =>{
   return(
     <div className="card">
-      <img alt="Daily Sushi" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju"/>
-      <h2>Daily Sushi</h2>
-      <h3>Japanesh,Ashian,Korean</h3>
-      <h4>4.2 star</h4>
+      <img alt="Daily Sushi" src={DailySushi.image}/>
+      <h2>{DailySushi.name}</h2>
+      <h3>{DailySushi.cusines.join(", ")}</h3>
+      <h4>{DailySushi.rating}</h4>
     </div>
   )
 

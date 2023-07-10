@@ -3027,43 +3027,53 @@ const HeaderComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
     }, undefined);
 _c1 = HeaderComponent;
 //Body
+const DailySushi = {
+    name: "Daily Sushi",
+    image: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju",
+    cusines: [
+        "Japanesh",
+        "Ashian",
+        "Korean"
+    ],
+    rating: "4.2"
+};
 const RestaurantCard = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 alt: "Daily Sushi",
-                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju"
+                src: DailySushi.image
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 29,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Daily Sushi"
+                children: DailySushi.name
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 30,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Japanesh,Ashian,Korean"
+                children: DailySushi.cusines.join(", ")
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 31,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "4.2 star"
+                children: DailySushi.rating
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 32,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 28,
+        lineNumber: 34,
         columnNumber: 10
     }, undefined);
 };
@@ -3072,12 +3082,12 @@ const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 37,
+            lineNumber: 43,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 36,
+        lineNumber: 42,
         columnNumber: 10
     }, undefined);
 };
@@ -3087,7 +3097,7 @@ const Footer = ()=>{
         children: "footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 41,
+        lineNumber: 47,
         columnNumber: 10
     }, undefined);
 };
@@ -3097,17 +3107,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 45,
+                lineNumber: 51,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 46,
+                lineNumber: 52,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 47,
+                lineNumber: 53,
                 columnNumber: 5
             }, undefined)
         ]
@@ -3117,7 +3127,7 @@ _c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 51,
+    lineNumber: 57,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;
