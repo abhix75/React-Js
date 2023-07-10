@@ -47,7 +47,7 @@ const RestaurantCard = () =>{
       <img alt="Daily Sushi" src={DailySushi.image}/>
       <h2>{DailySushi.name}</h2>
       <h3>{DailySushi.cusines.join(", ")}</h3>
-      <h4>{DailySushi.rating}</h4>
+      <h4>{DailySushi.rating} star</h4>
     </div>
   )
 
@@ -55,7 +55,27 @@ const RestaurantCard = () =>{
 
 const Body = () => {
   return (
-    <div>
+    <div className="Restaurant-List">
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
+      <RestaurantCard/>
       <RestaurantCard/>
     </div>
   )

@@ -33,4 +33,9 @@
   width: 100%;
 }
 
+.Restaurant-List {
+  flex-wrap: wrap;
+  display: flex;
+}
+
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

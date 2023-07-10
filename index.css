@@ -32,3 +32,8 @@
 .card>img{
     width: 100%;
 }
+
+.Restaurant-List{
+    display: flex;
+    flex-wrap:wrap;
+}
