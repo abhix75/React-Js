@@ -44,9 +44,7 @@ const Footer = () => {
 
 const AppLayout = () =>{
   return (
-    <div style ={{
-      backgroundColor: "brown",
-    }}>
+    <div className="jsx">
     <HeaderComponent/>
     <Body/>
     <Footer/>

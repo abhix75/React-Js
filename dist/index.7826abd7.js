@@ -3049,23 +3049,21 @@ const Footer = ()=>{
 _c3 = Footer;
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            backgroundColor: "brown"
-        },
+        className: "jsx",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 37,
+                lineNumber: 35,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 38,
+                lineNumber: 36,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 39,
+                lineNumber: 37,
                 columnNumber: 5
             }, undefined)
         ]
@@ -3079,7 +3077,7 @@ _c4 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 43,
+    lineNumber: 41,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4;
