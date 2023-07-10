@@ -3047,32 +3047,40 @@ const Footer = ()=>{
     }, undefined);
 };
 _c3 = Footer;
+const styleObj = {
+    backgroundColor: "brown"
+};
 const AppLayout = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: styleObj,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 35,
+                lineNumber: 38,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 36,
+                lineNumber: 39,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 37,
+                lineNumber: 40,
                 columnNumber: 5
             }, undefined)
         ]
-    }, void 0, true);
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 37,
+        columnNumber: 10
+    }, undefined);
 };
 _c4 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 41,
+    lineNumber: 44,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4;
