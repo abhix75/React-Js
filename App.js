@@ -1822,7 +1822,7 @@ const RestaurantCard = (props) =>{
 const Body = () => {
   return (
     <div className="Restaurant-List">
-      <RestaurantCard  restaurant = {RestaurantList[0]}/>
+      {RestaurantCard   (RestaurantList[0])}
       <RestaurantCard  restaurant = {RestaurantList[1]}/>
       <RestaurantCard  restaurant = {RestaurantList[2]}/>
       <RestaurantCard  restaurant = {RestaurantList[3]}/>

@@ -4656,13 +4656,7 @@ const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "Restaurant-List",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: RestaurantList[0]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 1467,
-                columnNumber: 7
-            }, undefined),
+            RestaurantCard(RestaurantList[0]),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
                 restaurant: RestaurantList[1]
             }, void 0, false, {
