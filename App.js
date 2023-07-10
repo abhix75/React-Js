@@ -31,7 +31,26 @@ const HeaderComponent = () => (
   </div>
 );
 
+//Body
+
+const Body = () => {
+  return <h4>body</h4>
+}
+
+const Footer = () => {
+  return <h4>footer</h4>
+}
+
+
+const AppLayout = () =>{
+  return (
+    <HeaderComponent/>
+    <Body/>
+    <Footer/>
+  )
+}
+
 console.log(heading);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeaderComponent />);
+root.render(<AppLayout />);

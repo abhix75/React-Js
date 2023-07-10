@@ -3026,15 +3026,47 @@ const HeaderComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         columnNumber: 31
     }, undefined);
 _c1 = HeaderComponent;
+//Body
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+        children: "body"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 28,
+        columnNumber: 10
+    }, undefined);
+};
+_c2 = Body;
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+        children: "footer"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 31,
+        columnNumber: 10
+    }, undefined);
+};
+_c3 = Footer;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 34,
+        columnNumber: 10
+    }, undefined);
+};
+_c4 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 25,
+    lineNumber: 37,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
+var _c, _c1, _c2, _c3, _c4;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "HeaderComponent");
+$RefreshReg$(_c2, "Body");
+$RefreshReg$(_c3, "Footer");
+$RefreshReg$(_c4, "AppLayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
