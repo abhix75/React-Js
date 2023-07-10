@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 const Title = () => (
   <h1 id="title" key="h1">
-    Namaste React
+    Food Villa
   </h1>
 );
 
@@ -14,10 +14,17 @@ const Title = () => (
 
 //functional component
 const HeaderComponent = () => (
-  <div>
-    <Title></Title>
-    <h1> Namaste React from Functional Component</h1>
-    <h2>This functional component from h2 tag</h2>
+  <div className="header">
+    <Title />
+    <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
+    </div>
+ 
   </div>
 );
 
