@@ -11,6 +11,7 @@ const Body = () => {
           className="search-input"
           placeholder="Search"
           value={SearchTxt}
+        onChange={(e)=> console.log(e.target.value)}
         />
 
         <button className="search-btn">Search</button>
