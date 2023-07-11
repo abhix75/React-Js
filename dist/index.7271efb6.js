@@ -2948,8 +2948,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 //default Import
-var _headerJs = require("./component/Header.js");
-var _headerJsDefault = parcelHelpers.interopDefault(_headerJs);
+var _headerJsx = require("./component/Header.jsx");
+var _headerJsxDefault = parcelHelpers.interopDefault(_headerJsx);
 //Body
 const RestaurantList = [
     {
@@ -4606,7 +4606,7 @@ _c2 = Footer;
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsxDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 1459,
                 columnNumber: 7
@@ -4642,7 +4642,7 @@ $RefreshReg$(_c3, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./component/Header.js":"knXDc"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./component/Header.jsx":"j0QLQ"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -28995,11 +28995,11 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"knXDc":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$3d92 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"7422ead32dcc1e6b":"786KC"}],"j0QLQ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$21be = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$3d92.prelude(module);
+$parcel$ReactRefreshHelpers$21be.prelude(module);
 
 try {
 //Named export
@@ -29014,12 +29014,12 @@ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
             alt: "Food_Villa_Logo",
             src: "https://scontent.fbbi6-1.fna.fbcdn.net/v/t39.30808-6/300568234_1119074258685043_4997319920694524626_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=eeHdQrIHvrEAX_K6ih4&_nc_ht=scontent.fbbi6-1.fna&oh=00_AfBORaTnIBDdJuIMLje038Hq8xBqMLxNmJSf9GfpFyur9Q&oe=64B1FDDD"
         }, void 0, false, {
-            fileName: "src/component/Header.js",
+            fileName: "src/component/Header.jsx",
             lineNumber: 3,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "src/component/Header.js",
+        fileName: "src/component/Header.jsx",
         lineNumber: 2,
         columnNumber: 28
     }, undefined);
@@ -29029,7 +29029,7 @@ const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "src/component/Header.js",
+                fileName: "src/component/Header.jsx",
                 lineNumber: 8,
                 columnNumber: 7
             }, undefined),
@@ -29040,45 +29040,45 @@ const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Home"
                         }, void 0, false, {
-                            fileName: "src/component/Header.js",
+                            fileName: "src/component/Header.jsx",
                             lineNumber: 11,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About"
                         }, void 0, false, {
-                            fileName: "src/component/Header.js",
+                            fileName: "src/component/Header.jsx",
                             lineNumber: 12,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact"
                         }, void 0, false, {
-                            fileName: "src/component/Header.js",
+                            fileName: "src/component/Header.jsx",
                             lineNumber: 13,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
-                            fileName: "src/component/Header.js",
+                            fileName: "src/component/Header.jsx",
                             lineNumber: 14,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/component/Header.js",
+                    fileName: "src/component/Header.jsx",
                     lineNumber: 10,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/component/Header.js",
+                fileName: "src/component/Header.jsx",
                 lineNumber: 9,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/component/Header.js",
+        fileName: "src/component/Header.jsx",
         lineNumber: 7,
         columnNumber: 22
     }, undefined);
@@ -29089,7 +29089,7 @@ var _c, _c1;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "Header");
 
-  $parcel$ReactRefreshHelpers$3d92.postlude(module);
+  $parcel$ReactRefreshHelpers$21be.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
