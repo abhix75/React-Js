@@ -2947,7 +2947,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-//Named Import
+//default Import
 var _header = require("./component/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 //Body
@@ -4539,21 +4539,21 @@ const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating })=>{
                 src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1443,
+                lineNumber: 1441,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: name
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1444,
+                lineNumber: 1442,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1445,
+                lineNumber: 1443,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -4563,13 +4563,13 @@ const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating })=>{
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 1446,
+                lineNumber: 1444,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 1442,
+        lineNumber: 1440,
         columnNumber: 10
     }, undefined);
 };
@@ -4582,13 +4582,13 @@ const Body = ()=>{
                 ...restaurant.data
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1452,
+                lineNumber: 1450,
                 columnNumber: 14
             }, undefined);
         })
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 1450,
+        lineNumber: 1448,
         columnNumber: 10
     }, undefined);
 };
@@ -4598,7 +4598,7 @@ const Footer = ()=>{
         children: "footer"
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 1457,
+        lineNumber: 1455,
         columnNumber: 10
     }, undefined);
 };
@@ -4608,17 +4608,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1461,
+                lineNumber: 1459,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1462,
+                lineNumber: 1460,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 1463,
+                lineNumber: 1461,
                 columnNumber: 7
             }, undefined)
         ]
@@ -4628,7 +4628,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 1467,
+    lineNumber: 1465,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
