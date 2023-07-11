@@ -1,21 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Title from "./component/Title";
-
-//Header
-const HeaderComponent = () => (
-  <div className="header">
-    <Title />
-    <div className="nav-items">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Cart</li>
-      </ul>
-    </div>
-  </div>
-);
+//Named Import
+import {Title} from "./component/Header";
+//default Import
+import Header from "./component/Header";
 
 //Body
 
@@ -1613,7 +1601,7 @@ const Footer = () => {
 const AppLayout = () => {
   return (
     <>
-      <HeaderComponent />
+      <Header/>
       <Body />
       <Footer />
     </>
