@@ -27467,7 +27467,7 @@ const Body = ()=>{
                         className: "search-input",
                         placeholder: "Search",
                         value: SearchTxt,
-                        onChange: (e)=>void 0
+                        onChange: (e)=>SearchTxt = e.target.value
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
                         lineNumber: 7,
