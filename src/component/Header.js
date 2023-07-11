@@ -1,5 +1,5 @@
 //Named export
-export const Title = () => (
+ const Title = () => (
     <a href="/">
       <img
         className="Logo"
@@ -10,7 +10,7 @@ export const Title = () => (
   );
 
   //Header
-export const Header = () => (
+const Header = () => (
     <div className="header">
       <Title />
       <div className="nav-items">
@@ -24,4 +24,4 @@ export const Header = () => (
     </div>
   );
 //default Export
- // export default Header;
+ export default Header;
