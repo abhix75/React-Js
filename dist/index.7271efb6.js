@@ -27456,22 +27456,53 @@ var _constant = require("../constant");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "Restaurant-List",
-        children: (0, _constant.RestaurantList).map((restaurant)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
-                ...restaurant.data
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        className: "search-input",
+                        placeholder: "Search",
+                        value: " "
+                    }, void 0, false, {
+                        fileName: "src/component/Body.js",
+                        lineNumber: 6,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "search-btn",
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/component/Body.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/component/Body.js",
+                lineNumber: 5,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Restaurant-List",
+                children: (0, _constant.RestaurantList).map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                        ...restaurant.data
+                    }, void 0, false, {
+                        fileName: "src/component/Body.js",
+                        lineNumber: 12,
+                        columnNumber: 16
+                    }, undefined);
+                })
             }, void 0, false, {
                 fileName: "src/component/Body.js",
-                lineNumber: 6,
-                columnNumber: 14
-            }, undefined);
-        })
-    }, void 0, false, {
-        fileName: "src/component/Body.js",
-        lineNumber: 4,
-        columnNumber: 10
-    }, undefined);
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _c = Body;
 exports.default = Body;
