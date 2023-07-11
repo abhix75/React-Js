@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 //default Import
-import Header,{Title} from "./component/Header";
+import Header from "./component/Header.js";
 
 //Body
 
