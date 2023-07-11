@@ -6,7 +6,7 @@ const Body = () => {
 
 //SearchTxt is a Local State variable
 
-  const [SearchTxt] = useState("KFC"); //To create a State Variable
+  const [SearchTxt,setSearchTxt] = useState("KFC"); //To create a State Variable
   return (
     <>
       <div className="search-container">
@@ -15,7 +15,7 @@ const Body = () => {
           className="search-input"
           placeholder="Search"
           value={SearchTxt}
-          onChange={(e) => (SearchTxt = e.target.value)}
+          onChange={(e) => (setSearchTxt (e.target.value))}
         />
 
         <button className="search-btn">Search</button>

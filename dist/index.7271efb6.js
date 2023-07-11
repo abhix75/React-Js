@@ -27461,7 +27461,7 @@ const Body = ()=>{
     _s();
     //   const SearchTxt = "KFC";
     //SearchTxt is a Local State variable
-    const [SearchTxt] = (0, _react.useState)("KFC"); //To create a State Variable
+    const [SearchTxt, setSearchTxt] = (0, _react.useState)("KFC"); //To create a State Variable
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27472,7 +27472,7 @@ const Body = ()=>{
                         className: "search-input",
                         placeholder: "Search",
                         value: SearchTxt,
-                        onChange: (e)=>SearchTxt = e.target.value
+                        onChange: (e)=>setSearchTxt(e.target.value)
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
                         lineNumber: 12,
@@ -27511,7 +27511,7 @@ const Body = ()=>{
         ]
     }, void 0, true);
 };
-_s(Body, "c4qr3cRM8uGnkgsatSu8OqypDNU=");
+_s(Body, "jBjyIEjP/vQiZyXyq6Hk4OQIPf0=");
 _c = Body;
 exports.default = Body;
 var _c;
