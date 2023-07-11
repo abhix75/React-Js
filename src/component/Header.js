@@ -10,7 +10,7 @@ export const Title = () => (
   );
 
   //Header
-const Header = () => (
+export const Header = () => (
     <div className="header">
       <Title />
       <div className="nav-items">
@@ -24,4 +24,4 @@ const Header = () => (
     </div>
   );
 //default Export
-  export default Header;
+ // export default Header;

@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 //default Import
-import Header from "./component/Header.jsx";
+import * as obj from "./component/Header.js";
+
 
 //Body
 
@@ -1599,7 +1600,7 @@ const Footer = () => {
 const AppLayout = () => {
   return (
     <>
-      <Header/>
+      <obj.Header/>
       <Body />
       <Footer />
     </>
