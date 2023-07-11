@@ -27456,6 +27456,7 @@ var _constant = require("../constant");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 const Body = ()=>{
+    const SearchTxt = "KFC";
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27465,10 +27466,10 @@ const Body = ()=>{
                         type: "text",
                         className: "search-input",
                         placeholder: "Search",
-                        value: " "
+                        value: SearchTxt
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 6,
+                        lineNumber: 7,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27476,13 +27477,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 8,
+                        lineNumber: 9,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/component/Body.js",
-                lineNumber: 5,
+                lineNumber: 6,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27492,13 +27493,13 @@ const Body = ()=>{
                         ...restaurant.data
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/component/Body.js",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined)
         ]

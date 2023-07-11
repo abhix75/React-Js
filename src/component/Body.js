@@ -1,6 +1,8 @@
 import { RestaurantList } from "../constant";
 import RestaurantCard from "./RestaurantCard";
 const Body = () => {
+
+    const SearchTxt ="KFC"
   return (
     <>
       <div className="search-container">
@@ -8,7 +10,7 @@ const Body = () => {
           type="text"
           className="search-input"
           placeholder="Search"
-          value=" "
+          value={SearchTxt}
         />
 
         <button className="search-btn">Search</button>
