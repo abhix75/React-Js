@@ -28,7 +28,15 @@ const Body = () => {
         <button
           className="search-btn"
           onClick={() => {
-            setSearchOnClick("true");
+
+            if(SearchOnClick === "true")
+            {
+                setSearchOnClick("false");
+            }
+            else{
+                setSearchOnClick("true");
+            }
+            
           }}
         >
           Search

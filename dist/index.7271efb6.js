@@ -27490,7 +27490,8 @@ const Body = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
                         onClick: ()=>{
-                            setSearchOnClick("true");
+                            if (SearchOnClick === "true") setSearchOnClick("false");
+                            else setSearchOnClick("true");
                         },
                         children: "Search"
                     }, void 0, false, {
@@ -27511,13 +27512,13 @@ const Body = ()=>{
                         ...restaurant.data
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 27,
+                        lineNumber: 31,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/component/Body.js",
-                lineNumber: 25,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined)
         ]
