@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { RestaurantList } from "../constant";
 import RestaurantCard from "./RestaurantCard";
+
+function filterData(searchText, restaurants) {
+  const filterData = restaurants.filter((restaurant) =>
+    restaurant?.data?.name.includes(searchText)
+  );
+  return filterData;
+}
 const Body = () => {
-  //   const SearchTxt = "KFC";
-
-  //SearchTxt is a Local State variable
-
-  const [SearchTxt, setSearchTxt] = useState("KFC"); //To create a State Variable
-
-  const [SearchOnClick, setSearchOnClick] = useState("false");
+  const [restaurants, setRestaurants] = useState(RestaurantList);
+  const [SearchTxt, setSearchTxt] = useState(""); 
 
   return (
     <>
@@ -18,32 +20,22 @@ const Body = () => {
           className="search-input"
           placeholder="Search"
           value={SearchTxt}
-          onChange={(e) =>
-            //   e.target.value --> whatever you write in the input
-
-            setSearchTxt(e.target.value)
-          }
-        />
-        <h1>{SearchOnClick}</h1>
+          onChange={(e) => setSearchTxt(e.target.value)}
+        ></input>
         <button
           className="search-btn"
           onClick={() => {
-
-            if(SearchOnClick === "true")
-            {
-                setSearchOnClick("false");
-            }
-            else{
-                setSearchOnClick("true");
-            }
-            
+            // filter the data
+            const data = filterData(SearchTxt, restaurants);
+            // update the state of restaurants list
+            setRestaurants(data);
           }}
         >
           Search
         </button>
       </div>
       <div className="Restaurant-List">
-        {RestaurantList.map((restaurant) => {
+        {restaurants.map((restaurant) => {
           return <RestaurantCard {...restaurant.data} />;
         })}
       </div>
