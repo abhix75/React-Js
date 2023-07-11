@@ -27462,6 +27462,7 @@ const Body = ()=>{
     //   const SearchTxt = "KFC";
     //SearchTxt is a Local State variable
     const [SearchTxt, setSearchTxt] = (0, _react.useState)("KFC"); //To create a State Variable
+    const [SearchOnClick, setSearchOnClick] = (0, _react.useState)("false");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27472,24 +27473,35 @@ const Body = ()=>{
                         className: "search-input",
                         placeholder: "Search",
                         value: SearchTxt,
-                        onChange: (e)=>setSearchTxt(e.target.value)
+                        onChange: (e)=>//   e.target.value --> whatever you write in the input
+                            setSearchTxt(e.target.value)
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 12,
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: SearchOnClick
+                    }, void 0, false, {
+                        fileName: "src/component/Body.js",
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
+                        onClick: ()=>{
+                            setSearchOnClick("true");
+                        },
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 14,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/component/Body.js",
-                lineNumber: 11,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27499,19 +27511,19 @@ const Body = ()=>{
                         ...restaurant.data
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 18,
+                        lineNumber: 27,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/component/Body.js",
-                lineNumber: 16,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "jBjyIEjP/vQiZyXyq6Hk4OQIPf0=");
+_s(Body, "ZSCFAHZu2MDrV2ftOy0iUa4OAwU=");
 _c = Body;
 exports.default = Body;
 var _c;
