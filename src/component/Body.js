@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { RestaurantList } from "../constant";
 import RestaurantCard from "./RestaurantCard";
 const Body = () => {
-  const SearchTxt = "KFC";
+//   const SearchTxt = "KFC";
+
+//SearchTxt is a Local State variable
+
+  const [SearchTxt] = useState("KFC"); //To create a State Variable
   return (
     <>
       <div className="search-container">
