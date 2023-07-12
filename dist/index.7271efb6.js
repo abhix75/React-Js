@@ -27467,7 +27467,9 @@ const Body = ()=>{
     _s();
     const [restaurants, setRestaurants] = (0, _react.useState)((0, _constant.RestaurantList));
     const [SearchTxt, setSearchTxt] = (0, _react.useState)("");
-    (0, _react.useEffect)(()=>{}, []);
+    (0, _react.useEffect)(()=>{}, [
+        restaurants
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {

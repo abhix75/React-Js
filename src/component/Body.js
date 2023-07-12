@@ -14,7 +14,7 @@ const Body = () => {
   
 useEffect(()=>{
   console.log("call the function when the dependencies array changes")
-},[]);
+},[restaurants]);
   return (
     <>
       <div className="search-container">
