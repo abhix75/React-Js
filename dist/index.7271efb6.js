@@ -27479,9 +27479,10 @@ const Body = ()=>{
         setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
         setAllrestaurant(json?.data?.cards[2]?.data?.data?.cards);
     }
+    if (!allrestaurant) return null;
     return allrestaurant.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/component/Body.js",
-        lineNumber: 22,
+        lineNumber: 23,
         columnNumber: 38
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -27496,7 +27497,7 @@ const Body = ()=>{
                         onChange: (e)=>setSearchTxt(e.target.value)
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27510,13 +27511,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 25,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/component/Body.js",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27526,13 +27527,13 @@ const Body = ()=>{
                         ...restaurant.data
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 36,
+                        lineNumber: 37,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/component/Body.js",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined)
         ]

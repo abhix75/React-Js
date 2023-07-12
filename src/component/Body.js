@@ -26,7 +26,9 @@ const Body = () => {
     setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     setAllrestaurant(json?.data?.cards[2]?.data?.data?.cards);
   }
-  console.log("render");
+  if(!allrestaurant) return null;
+
+
   return allrestaurant.length == 0 ?  <Shimmer /> : (
     <>
       <div className="search-container">
