@@ -9,7 +9,8 @@ function filterData(searchText, restaurants) {
   return filterData;
 }
 const Body = () => {
-  const [restaurants, setRestaurants] = useState([]);
+  const [allrestaurant, setAllrestaurant]=useState([]);
+  const [filterrestaurants, setFilterRestaurants] = useState([]);
   const [SearchTxt, setSearchTxt] = useState("");
 
   useEffect(() => {
@@ -22,10 +23,11 @@ const Body = () => {
     );
     const json = await data.json();
     console.log(json);
-    setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    setAllrestaurant(json?.data?.cards[2]?.data?.data?.cards);
   }
   console.log("render");
-  return restaurants.length == 0 ?  <Shimmer /> : (
+  return allrestaurant.length == 0 ?  <Shimmer /> : (
     <>
       <div className="search-container">
         <input
@@ -39,16 +41,16 @@ const Body = () => {
           className="search-btn"
           onClick={() => {
             // filter the data
-            const data = filterData(SearchTxt, restaurants);
+            const data = filterData(SearchTxt, allrestaurant);
             // update the state of restaurants list
-            setRestaurants(data);
+            setFilterRestaurants(data);
           }}
         >
           Search
         </button>
       </div>
       <div className="Restaurant-List">
-        {restaurants.map((restaurant) => {
+        {filterrestaurants.map((restaurant) => {
           return <RestaurantCard {...restaurant.data} />;
         })}
       </div>

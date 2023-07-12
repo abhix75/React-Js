@@ -27467,7 +27467,8 @@ function filterData(searchText, restaurants) {
 }
 const Body = ()=>{
     _s();
-    const [restaurants, setRestaurants] = (0, _react.useState)([]);
+    const [allrestaurant, setAllrestaurant] = (0, _react.useState)([]);
+    const [filterrestaurants, setFilterRestaurants] = (0, _react.useState)([]);
     const [SearchTxt, setSearchTxt] = (0, _react.useState)("");
     (0, _react.useEffect)(()=>{
         getRestaurant();
@@ -27475,12 +27476,13 @@ const Body = ()=>{
     async function getRestaurant() {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
-        setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        setAllrestaurant(json?.data?.cards[2]?.data?.data?.cards);
     }
-    return restaurants.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    return allrestaurant.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/component/Body.js",
-        lineNumber: 20,
-        columnNumber: 36
+        lineNumber: 22,
+        columnNumber: 38
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27494,49 +27496,49 @@ const Body = ()=>{
                         onChange: (e)=>setSearchTxt(e.target.value)
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 22,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
                         onClick: ()=>{
                             // filter the data
-                            const data = filterData(SearchTxt, restaurants);
+                            const data = filterData(SearchTxt, allrestaurant);
                             // update the state of restaurants list
-                            setRestaurants(data);
+                            setFilterRestaurants(data);
                         },
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 23,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/component/Body.js",
-                lineNumber: 21,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "Restaurant-List",
-                children: restaurants.map((restaurant)=>{
+                children: filterrestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                         ...restaurant.data
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/component/Body.js",
-                lineNumber: 32,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "w2OlXJKgawHeNpfyApUbhI5A6DQ=");
+_s(Body, "01Kvyw7jFNFFAv59nuKdLIIRMVQ=");
 _c = Body;
 exports.default = Body;
 var _c;
