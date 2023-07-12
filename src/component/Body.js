@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RestaurantList } from "../constant";
 import RestaurantCard from "./RestaurantCard";
 
@@ -11,7 +11,10 @@ function filterData(searchText, restaurants) {
 const Body = () => {
   const [restaurants, setRestaurants] = useState(RestaurantList);
   const [SearchTxt, setSearchTxt] = useState("");
-  console.log(restaurants);
+  
+useEffect(()=>{
+  console.log("call the function when the dependencies array changes")
+},[SearchTxt]);
   return (
     <>
       <div className="search-container">

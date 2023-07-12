@@ -27467,6 +27467,9 @@ const Body = ()=>{
     _s();
     const [restaurants, setRestaurants] = (0, _react.useState)((0, _constant.RestaurantList));
     const [SearchTxt, setSearchTxt] = (0, _react.useState)("");
+    (0, _react.useEffect)(()=>{}, [
+        SearchTxt
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27480,7 +27483,7 @@ const Body = ()=>{
                         onChange: (e)=>setSearchTxt(e.target.value)
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 13,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27494,13 +27497,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 14,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/component/Body.js",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27510,19 +27513,19 @@ const Body = ()=>{
                         ...restaurant.data
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 25,
+                        lineNumber: 26,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/component/Body.js",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "6MqB/28vYq0DWR5wAe3CJa/CsA4=");
+_s(Body, "LAbwks9B54yiFGchFiyGk/9LXm0=");
 _c = Body;
 exports.default = Body;
 var _c;
