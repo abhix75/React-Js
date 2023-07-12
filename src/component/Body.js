@@ -13,8 +13,10 @@ const Body = () => {
   const [SearchTxt, setSearchTxt] = useState("");
   
 useEffect(()=>{
-  console.log("call the function when the dependencies array changes")
-},[restaurants]);
+  console.log("use Effect")
+},[]);
+
+console.log("render")
   return (
     <>
       <div className="search-container">
