@@ -11,7 +11,7 @@ function filterData(searchText, restaurants) {
 const Body = () => {
   const [restaurants, setRestaurants] = useState(RestaurantList);
   const [SearchTxt, setSearchTxt] = useState("");
-  console.log("render()");
+  console.log(restaurants);
   return (
     <>
       <div className="search-container">
