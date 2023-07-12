@@ -11,12 +11,19 @@ function filterData(searchText, restaurants) {
 const Body = () => {
   const [restaurants, setRestaurants] = useState(RestaurantList);
   const [SearchTxt, setSearchTxt] = useState("");
-  
-useEffect(()=>{
-  console.log("use Effect")
-},[]);
 
-console.log("render")
+  useEffect(() => {
+    getRestaurant();
+  }, []);
+
+  async function getRestaurant() {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING"
+    );
+    const json = await data.json();
+    console.log(json);
+  }
+  console.log("render");
   return (
     <>
       <div className="search-container">
