@@ -1,3 +1,4 @@
+import { useState } from "react";
 //Named export
  const Title = () => (
     <a href="/">
@@ -9,10 +10,19 @@
     </a>
   );
 
+  
+
   //Header
-const Header = () => (
-    <div className="header">
+const Header = () => {
+
+  const  [title , setTitle] = useState("FOOD VILLA")
+  
+   return (<div className="header">
       <Title />
+
+      <h1>{title}</h1>
+
+      <button onClick={() => setTitle("NEW FOOD STORES")}> Change Title</button>
       <div className="nav-items">
         <ul>
           <li>Home</li>
@@ -22,6 +32,6 @@ const Header = () => (
         </ul>
       </div>
     </div>
-  );
+  )};
 //default Export
  export default Header;

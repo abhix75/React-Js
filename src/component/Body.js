@@ -10,7 +10,7 @@ function filterData(searchText, restaurants) {
 }
 const Body = () => {
   const [restaurants, setRestaurants] = useState(RestaurantList);
-  const [SearchTxt, setSearchTxt] = useState(""); 
+  const [SearchTxt, setSearchTxt] = useState("");
 
   return (
     <>
