@@ -10,7 +10,7 @@ import { useState } from "react";
     </a>
   );
 
-  
+  console.log("render()");
 
   //Header
 const Header = () => {
