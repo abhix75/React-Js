@@ -4,12 +4,12 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./shimmer";
 function filterData(searchText, restaurants) {
   const filterData = restaurants.filter((restaurant) =>
-    restaurant?.data?.name.includes(searchText)
+    restaurant?.data?.name?.toLowerCase()?.includes(searchText?.toLowerCase())
   );
   return filterData;
 }
 const Body = () => {
-  const [allrestaurant, setAllrestaurant]=useState([]);
+  const [allrestaurant, setAllrestaurant] = useState([]);
   const [filterrestaurants, setFilterRestaurants] = useState([]);
   const [SearchTxt, setSearchTxt] = useState("");
 
@@ -26,10 +26,15 @@ const Body = () => {
     setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     setAllrestaurant(json?.data?.cards[2]?.data?.data?.cards);
   }
-  if(!allrestaurant) return null;
 
+  //not render component
+  if (!allrestaurant) return null;
 
-  return allrestaurant.length == 0 ?  <Shimmer /> : (
+  if (filterrestaurants?.length == 0) return <h1>NO Restaurant Matches Your Search!!!</h1>;
+
+  return allrestaurant?.length == 0 ? (
+    <Shimmer />
+  ) : (
     <>
       <div className="search-container">
         <input
