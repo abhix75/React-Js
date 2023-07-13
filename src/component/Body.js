@@ -30,10 +30,11 @@ const Body = () => {
   //not render component
   if (!allrestaurant) return null;
 
-  if (filterrestaurants?.length == 0) return <h1>NO Restaurant Matches Your Search!!!</h1>;
+  // if (filterrestaurants?.length == 0)
+  //   return <h1>NO Restaurant Matches Your Search!!!</h1>;
 
   return allrestaurant?.length == 0 ? (
-    <Shimmer />
+   <Shimmer/>
   ) : (
     <>
       <div className="search-container">

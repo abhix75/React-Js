@@ -1554,3 +1554,5 @@ export const RestaurantList = [
     subtype: "basic",
   },
 ];
+
+export const shimmer_card_unit = 8;
