@@ -2954,26 +2954,28 @@ var _bodyJs = require("./component/Body.js");
 var _bodyJsDefault = parcelHelpers.interopDefault(_bodyJs);
 var _footerJs = require("./component/Footer.js");
 var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
-var _reactRouterDom = require("react-router-dom");
 var _aboutJs = require("./component/About.js");
 var _aboutJsDefault = parcelHelpers.interopDefault(_aboutJs);
+var _errorJs = require("./component/Error.js");
+var _errorJsDefault = parcelHelpers.interopDefault(_errorJs);
+var _reactRouterDom = require("react-router-dom");
 //Body
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 13,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined)
         ]
@@ -2985,15 +2987,20 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 20,
+            lineNumber: 22,
             columnNumber: 12
+        }, undefined),
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 23,
+            columnNumber: 17
         }, undefined)
     },
     {
         path: "/about",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 23,
+            lineNumber: 26,
             columnNumber: 12
         }, undefined)
     }
@@ -3003,7 +3010,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: approuter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 26,
+    lineNumber: 29,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3014,7 +3021,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./component/Header.js":"knXDc","./component/Body.js":"iizf5","./component/Footer.js":"4ifUV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./component/About.js":"94Koj"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./component/Header.js":"knXDc","./component/Body.js":"iizf5","./component/Footer.js":"4ifUV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./component/About.js":"94Koj","./component/Error.js":"cosKY"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -35120,9 +35127,24 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "About Page"
-    }, void 0, false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "About Page"
+            }, void 0, false, {
+                fileName: "src/component/About.js",
+                lineNumber: 3,
+                columnNumber: 4
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "The Owner of this company is Abhijit Mishra"
+            }, void 0, false, {
+                fileName: "src/component/About.js",
+                lineNumber: 4,
+                columnNumber: 4
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/component/About.js",
         lineNumber: 2,
         columnNumber: 10
@@ -35134,6 +35156,57 @@ var _c;
 $RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$77f7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cosKY":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ea6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ea6f.prelude(module);
+
+try {
+// const Error = () =>
+// {
+//     <div>
+//         <h1>OOPS SOMETHING WENT WRONG.....</h1>
+//     </div>
+// }
+// export default Error
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Error = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Oops Something Went Wrong"
+            }, void 0, false, {
+                fileName: "src/component/Error.js",
+                lineNumber: 12,
+                columnNumber: 6
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Plz Check you Serarch"
+            }, void 0, false, {
+                fileName: "src/component/Error.js",
+                lineNumber: 13,
+                columnNumber: 6
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/component/Error.js",
+        lineNumber: 11,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Error;
+exports.default = Error;
+var _c;
+$RefreshReg$(_c, "Error");
+
+  $parcel$ReactRefreshHelpers$ea6f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

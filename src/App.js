@@ -4,8 +4,10 @@ import ReactDOM from "react-dom/client";
 import Header from "./component/Header.js";
 import Body from "./component/Body.js";
 import Footer from "./component/Footer.js";
-import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import About from "./component/About.js";
+import Error from "./component/Error.js";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 //Body
 
 const AppLayout = () => {
@@ -18,18 +20,19 @@ const AppLayout = () => {
   );
 };
 
-const approuter=createBrowserRouter([
+const approuter = createBrowserRouter([
   {
-    path:"/",
-    element:<AppLayout/>
+    path: "/",
+   element:<AppLayout/>,
+   errorElement:<Error/>
   },
   {
-    path:'/about',
-    element:<About/>
-  }
-])
+    path: "/about",
+    element: <About />,
+  },
+]);
 
 console.log(heading);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<RouterProvider router={approuter}/>);
+root.render(<RouterProvider router={approuter} />);
