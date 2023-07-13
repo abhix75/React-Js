@@ -6,7 +6,8 @@ import Body from "./component/Body.js";
 import Footer from "./component/Footer.js";
 import About from "./component/About.js";
 import Error from "./component/Error.js";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Contact from "./component/contact.js";
+import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 
 //Body
 
@@ -14,7 +15,7 @@ const AppLayout = () => {
   return (
     <>
       <Header />
-      <Body />
+      <Outlet />
       <Footer />
     </>
   );
@@ -24,12 +25,25 @@ const approuter = createBrowserRouter([
   {
     path: "/",
    element:<AppLayout/>,
-   errorElement:<Error/>
+   errorElement:<Error/>,
+   children:
+    [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ]
+   
   },
-  {
-    path: "/about",
-    element: <About />,
-  },
+
 ]);
 
 console.log(heading);
