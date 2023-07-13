@@ -35167,40 +35167,49 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$ea6f.prelude(module);
 
 try {
-// const Error = () =>
-// {
-//     <div>
-//         <h1>OOPS SOMETHING WENT WRONG.....</h1>
-//     </div>
-// }
-// export default Error
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 const Error = ()=>{
+    _s();
+    const err = (0, _reactRouterDom.useRouteError)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Oops Something Went Wrong"
             }, void 0, false, {
                 fileName: "src/component/Error.js",
-                lineNumber: 12,
+                lineNumber: 5,
                 columnNumber: 6
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Plz Check you Serarch"
             }, void 0, false, {
                 fileName: "src/component/Error.js",
-                lineNumber: 13,
+                lineNumber: 6,
+                columnNumber: 6
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: err.status + ":" + err.statusText
+            }, void 0, false, {
+                fileName: "src/component/Error.js",
+                lineNumber: 7,
                 columnNumber: 6
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/Error.js",
-        lineNumber: 11,
+        lineNumber: 4,
         columnNumber: 10
     }, undefined);
 };
+_s(Error, "U5GmGaAmh0j0MVy+E8WdBnjlm7s=", false, function() {
+    return [
+        (0, _reactRouterDom.useRouteError)
+    ];
+});
 _c = Error;
 exports.default = Error;
 var _c;
@@ -35211,6 +35220,6 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
 
 //# sourceMappingURL=index.7271efb6.js.map
