@@ -45,3 +45,7 @@
     background: lightgray;
     margin: 20px;
    }
+
+   .menu {
+    display: flex;
+}
