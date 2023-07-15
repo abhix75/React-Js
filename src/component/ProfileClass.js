@@ -9,9 +9,11 @@ class Profile extends React.Component {
             count:0,
             count2:2
         }
-      
+      console.log("Constructor");
     }
   render() {
+
+    console.log("render");
     return( 
     <div>
      <h1>Profile From class</h1>
