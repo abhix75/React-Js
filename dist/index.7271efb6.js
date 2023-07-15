@@ -35391,6 +35391,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouterDom = require("react-router-dom");
+var _profileClass = require("./ProfileClass");
+var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -35398,25 +35400,25 @@ const About = ()=>{
                 children: "About Page"
             }, void 0, false, {
                 fileName: "src/component/About.js",
-                lineNumber: 4,
+                lineNumber: 5,
                 columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "The Owner of this company is Abhijit Mishra"
             }, void 0, false, {
                 fileName: "src/component/About.js",
-                lineNumber: 5,
+                lineNumber: 6,
                 columnNumber: 4
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {}, void 0, false, {
                 fileName: "src/component/About.js",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/About.js",
-        lineNumber: 3,
+        lineNumber: 4,
         columnNumber: 10
     }, undefined);
 };
@@ -35430,7 +35432,37 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"cosKY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./ProfileClass":"bMaBv"}],"bMaBv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8d39 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8d39.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Profile extends (0, _reactDefault.default).Component {
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Profile From class"
+        }, void 0, false, {
+            fileName: "src/component/ProfileClass.js",
+            lineNumber: 4,
+            columnNumber: 12
+        }, this);
+    }
+}
+exports.default = Profile;
+
+  $parcel$ReactRefreshHelpers$8d39.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cosKY":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ea6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35680,36 +35712,6 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../constant":"jVIFP","./shimmer":"bltIQ"}],"bMaBv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8d39 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8d39.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class Profile extends (0, _reactDefault.default).Component {
-    render() {
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Profile From class"
-        }, void 0, false, {
-            fileName: "src/component/ProfileClass.js",
-            lineNumber: 4,
-            columnNumber: 12
-        }, this);
-    }
-}
-exports.default = Profile;
-
-  $parcel$ReactRefreshHelpers$8d39.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../constant":"jVIFP","./shimmer":"bltIQ"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
 
 //# sourceMappingURL=index.7271efb6.js.map
