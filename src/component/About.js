@@ -1,15 +1,41 @@
 import { Outlet } from "react-router-dom";
 import Profile from "./ProfileClass";
 import ProfileFunctional from "./Profile";
-const About = () => {
-  return (
-    <div>
-   <h1>About Page</h1>
-   <p>The Owner of this company is Abhijit Mishra</p>
-   <Profile name={"Abhijit Mishra From Class Based "}/>
-   <ProfileFunctional name={"Abhijit Mishra From Functionsl Based"}/>
-    </div>
-  );
-};
+import React from "react";
+// const About = () => {
+//   return (
+//     <div>
+//    <h1>About Page</h1>
+//    <p>The Owner of this company is Abhijit Mishra</p>
+//    <Profile name={"Abhijit Mishra From Class Based "}/>
+//    <ProfileFunctional name={"Abhijit Mishra From Functionsl Based"}/>
+//     </div>
+//   );
+// };
 
-export default About;
+// export default About;
+
+class About extends React.Component {
+
+  constructor(props){
+      super(props)
+
+      console.log("Parent Constructor");
+  }
+
+  componentDidMount(){
+    console.log("Parent ComponentDidMount");
+  }
+  render() {
+    console.log("Parent render");
+    return (
+      <div>
+        <h1>About Page</h1>
+        <p>The Owner of this company is Abhijit Mishra</p>
+        <Profile name={"Abhijit Mishra From Class Based "} />
+      </div>
+    );
+  }
+}
+
+export default About

@@ -35395,55 +35395,68 @@ var _profileClass = require("./ProfileClass");
 var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
 var _profile = require("./Profile");
 var _profileDefault = parcelHelpers.interopDefault(_profile);
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "About Page"
-            }, void 0, false, {
-                fileName: "src/component/About.js",
-                lineNumber: 6,
-                columnNumber: 4
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "The Owner of this company is Abhijit Mishra"
-            }, void 0, false, {
-                fileName: "src/component/About.js",
-                lineNumber: 7,
-                columnNumber: 4
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
-                name: "Abhijit Mishra From Class Based "
-            }, void 0, false, {
-                fileName: "src/component/About.js",
-                lineNumber: 8,
-                columnNumber: 4
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
-                name: "Abhijit Mishra From Functionsl Based"
-            }, void 0, false, {
-                fileName: "src/component/About.js",
-                lineNumber: 9,
-                columnNumber: 4
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/component/About.js",
-        lineNumber: 5,
-        columnNumber: 10
-    }, undefined);
-};
-_c = About;
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// const About = () => {
+//   return (
+//     <div>
+//    <h1>About Page</h1>
+//    <p>The Owner of this company is Abhijit Mishra</p>
+//    <Profile name={"Abhijit Mishra From Class Based "}/>
+//    <ProfileFunctional name={"Abhijit Mishra From Functionsl Based"}/>
+//     </div>
+//   );
+// };
+// export default About;
+class About extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        console.log("Parent Constructor");
+    }
+    componentDidMount() {
+        console.log("Parent ComponentDidMount");
+    }
+    render() {
+        console.log("Parent render");
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "About Page"
+                }, void 0, false, {
+                    fileName: "src/component/About.js",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "The Owner of this company is Abhijit Mishra"
+                }, void 0, false, {
+                    fileName: "src/component/About.js",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
+                    name: "Abhijit Mishra From Class Based "
+                }, void 0, false, {
+                    fileName: "src/component/About.js",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/component/About.js",
+            lineNumber: 28,
+            columnNumber: 12
+        }, this);
+    }
+}
 exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$77f7.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./ProfileClass":"bMaBv","./Profile":"7kLfj"}],"bMaBv":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./ProfileClass":"bMaBv","./Profile":"7kLfj","react":"21dqq"}],"bMaBv":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8d39 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35462,13 +35475,13 @@ class Profile extends (0, _reactDefault.default).Component {
             count: 0,
             count2: 2
         };
-        console.log("Constructor");
+        console.log("child Constructor");
     }
     componentDidMount() {
-        console.log("ComponentDidMount");
+        console.log("child ComponentDidMount");
     }
     render() {
-        console.log("render");
+        console.log("child render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -35608,7 +35621,7 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"cosKY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cosKY":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ea6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
