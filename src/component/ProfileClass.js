@@ -6,7 +6,8 @@ class Profile extends React.Component {
         super(props);
 
         this.state={
-            count:0
+            count:0,
+            count2:2
         }
       
     }
@@ -16,6 +17,8 @@ class Profile extends React.Component {
      <h1>Profile From class</h1>
      <h3>Name:{this.props.name}</h3>
      <h3>Count:{this.state.count}</h3>
+     <h3>Count:{this.state.count2}</h3>
+
     </div> ) ;
   }
 }
