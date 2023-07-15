@@ -35464,6 +35464,9 @@ class Profile extends (0, _reactDefault.default).Component {
         };
         console.log("Constructor");
     }
+    componentDidMount() {
+        console.log("ComponentDidMount");
+    }
     render() {
         console.log("render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35472,7 +35475,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     children: "Profile From class"
                 }, void 0, false, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 14,
+                    lineNumber: 17,
                     columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35482,7 +35485,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 15,
+                    lineNumber: 18,
                     columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35492,7 +35495,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 16,
+                    lineNumber: 19,
                     columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35502,7 +35505,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 17,
+                    lineNumber: 20,
                     columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35515,13 +35518,13 @@ class Profile extends (0, _reactDefault.default).Component {
                     children: "Count"
                 }, void 0, false, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 18,
+                    lineNumber: 21,
                     columnNumber: 6
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/component/ProfileClass.js",
-            lineNumber: 13,
+            lineNumber: 16,
             columnNumber: 12
         }, this);
     }

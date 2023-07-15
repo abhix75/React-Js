@@ -11,6 +11,11 @@ class Profile extends React.Component {
         }
       console.log("Constructor");
     }
+
+    componentDidMount()
+    {
+        console.log("ComponentDidMount")
+    }
   render() {
 
     console.log("render");
