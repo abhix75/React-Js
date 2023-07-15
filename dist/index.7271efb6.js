@@ -35417,7 +35417,9 @@ const About = ()=>{
                 lineNumber: 8,
                 columnNumber: 4
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
+                name: "Abhijit Mishra"
+            }, void 0, false, {
                 fileName: "src/component/About.js",
                 lineNumber: 9,
                 columnNumber: 4
@@ -35479,19 +35481,28 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const ProfileFunctional = ()=>{
+const Profile = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "Profile From Functional Component"
     }, void 0, false, {
         fileName: "src/component/Profile.js",
         lineNumber: 2,
         columnNumber: 10
+    }, undefined), /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+        children: [
+            "Name:",
+            props.name
+        ]
+    }, void 0, true, {
+        fileName: "src/component/Profile.js",
+        lineNumber: 2,
+        columnNumber: 54
     }, undefined);
 };
-_c = ProfileFunctional;
-exports.default = ProfileFunctional;
+_c = Profile;
+exports.default = Profile;
 var _c;
-$RefreshReg$(_c, "ProfileFunctional");
+$RefreshReg$(_c, "Profile");
 
   $parcel$ReactRefreshHelpers$8530.postlude(module);
 } finally {

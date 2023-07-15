@@ -7,7 +7,7 @@ const About = () => {
    <h1>About Page</h1>
    <p>The Owner of this company is Abhijit Mishra</p>
    <Profile/>
-   <ProfileFunctional/>
+   <ProfileFunctional name={"Abhijit Mishra"}/>
     </div>
   );
 };
