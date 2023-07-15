@@ -35456,6 +35456,12 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class Profile extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            count: 0
+        };
+    }
     render() {
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
@@ -35463,7 +35469,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     children: "Profile From class"
                 }, void 0, false, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 5,
+                    lineNumber: 11,
                     columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35473,13 +35479,23 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 6,
+                    lineNumber: 12,
+                    columnNumber: 6
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: [
+                        "Count:",
+                        this.state.count
+                    ]
+                }, void 0, true, {
+                    fileName: "src/component/ProfileClass.js",
+                    lineNumber: 13,
                     columnNumber: 6
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/component/ProfileClass.js",
-            lineNumber: 4,
+            lineNumber: 10,
             columnNumber: 12
         }, this);
     }
