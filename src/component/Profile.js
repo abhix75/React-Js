@@ -1,8 +1,8 @@
-const Profile = () =>
+const ProfileFunctional = () =>
 {
     return (
-        <h1>Profile</h1>
+        <h1>Profile From Functional Component</h1>
     )
 }
 
-export default Profile
+export default ProfileFunctional
