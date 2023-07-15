@@ -2962,8 +2962,8 @@ var _contactJs = require("./component/contact.js");
 var _contactJsDefault = parcelHelpers.interopDefault(_contactJs);
 var _restaurantMenuJs = require("./component/RestaurantMenu.js");
 var _restaurantMenuJsDefault = parcelHelpers.interopDefault(_restaurantMenuJs);
-var _profileJs = require("./component/Profile.js");
-var _profileJsDefault = parcelHelpers.interopDefault(_profileJs);
+var _profileClassJs = require("./component/ProfileClass.js");
+var _profileClassJsDefault = parcelHelpers.interopDefault(_profileClassJs);
 var _reactRouterDom = require("react-router-dom");
 //Body
 const AppLayout = ()=>{
@@ -3020,7 +3020,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 children: [
                     {
                         path: "profile",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileJsDefault.default), {}, void 0, false, {
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassJsDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 35,
                             columnNumber: 16
@@ -3063,7 +3063,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./component/Header.js":"knXDc","./component/Body.js":"iizf5","./component/Footer.js":"4ifUV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./component/About.js":"94Koj","./component/Error.js":"cosKY","./component/contact.js":"jR9xM","./component/RestaurantMenu.js":"kMuXm","react-router-dom":"9xmpe","./component/Profile.js":"7kLfj"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./component/Header.js":"knXDc","./component/Body.js":"iizf5","./component/Footer.js":"4ifUV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./component/About.js":"94Koj","./component/Error.js":"cosKY","./component/contact.js":"jR9xM","./component/RestaurantMenu.js":"kMuXm","react-router-dom":"9xmpe","./component/ProfileClass.js":"bMaBv"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -35680,35 +35680,36 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../constant":"jVIFP","./shimmer":"bltIQ"}],"7kLfj":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8530 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../constant":"jVIFP","./shimmer":"bltIQ"}],"bMaBv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8d39 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8530.prelude(module);
+$parcel$ReactRefreshHelpers$8d39.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Profile = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "Profile"
-    }, void 0, false, {
-        fileName: "src/component/Profile.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Profile;
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Profile extends (0, _reactDefault.default).Component {
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Profile From class"
+        }, void 0, false, {
+            fileName: "src/component/ProfileClass.js",
+            lineNumber: 4,
+            columnNumber: 12
+        }, this);
+    }
+}
 exports.default = Profile;
-var _c;
-$RefreshReg$(_c, "Profile");
 
-  $parcel$ReactRefreshHelpers$8530.postlude(module);
+  $parcel$ReactRefreshHelpers$8d39.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
 
 //# sourceMappingURL=index.7271efb6.js.map

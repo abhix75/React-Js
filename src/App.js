@@ -8,7 +8,7 @@ import About from "./component/About.js";
 import Error from "./component/Error.js";
 import Contact from "./component/contact.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
-import Profile from "./component/Profile.js";
+import Profile from "./component/ProfileClass.js";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 
 //Body
