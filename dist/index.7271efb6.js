@@ -35449,7 +35449,17 @@ class About extends (0, _reactDefault.default).Component {
         }, this);
     }
 }
-exports.default = About;
+exports.default = About; /**
+ * ORDER OF EXECUTION 
+ * 
+ * Parent Constructor
+ * Parent render
+ * Child Constructor
+ * Child render
+ * child ComponentDidMount
+ * Parent ComponentDidMount
+ * 
+ */ 
 
   $parcel$ReactRefreshHelpers$77f7.postlude(module);
 } finally {

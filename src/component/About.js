@@ -39,3 +39,17 @@ class About extends React.Component {
 }
 
 export default About
+
+
+
+/**
+ * ORDER OF EXECUTION 
+ * 
+ * Parent Constructor
+ * Parent render
+ * Child Constructor
+ * Child render
+ * child ComponentDidMount
+ * Parent ComponentDidMount
+ * 
+ */
