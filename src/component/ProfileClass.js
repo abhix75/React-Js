@@ -18,6 +18,12 @@ class Profile extends React.Component {
      <h3>Name:{this.props.name}</h3>
      <h3>Count:{this.state.count}</h3>
      <h3>Count:{this.state.count2}</h3>
+     <button onClick={()=>{
+        this.setState({
+            count:1,
+            count2:5
+        })
+     }}>Count</button>
 
     </div> ) ;
   }

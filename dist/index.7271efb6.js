@@ -35502,6 +35502,19 @@ class Profile extends (0, _reactDefault.default).Component {
                     fileName: "src/component/ProfileClass.js",
                     lineNumber: 15,
                     columnNumber: 6
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        this.setState({
+                            count: 1,
+                            count2: 5
+                        });
+                    },
+                    children: "Count"
+                }, void 0, false, {
+                    fileName: "src/component/ProfileClass.js",
+                    lineNumber: 16,
+                    columnNumber: 6
                 }, this)
             ]
         }, void 0, true, {
