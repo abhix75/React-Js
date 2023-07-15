@@ -35532,7 +35532,7 @@ var _react = require("react");
 var _s = $RefreshSig$();
 const Profile = (props)=>{
     _s();
-    const [count] = (0, _react.useState)(0);
+    const [count, setCount] = (0, _react.useState)(0);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -35561,6 +35561,16 @@ const Profile = (props)=>{
                 fileName: "src/component/Profile.js",
                 lineNumber: 7,
                 columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>{
+                    setCount(1);
+                },
+                children: "Count"
+            }, void 0, false, {
+                fileName: "src/component/Profile.js",
+                lineNumber: 8,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
@@ -35569,7 +35579,7 @@ const Profile = (props)=>{
         columnNumber: 10
     }, undefined);
 };
-_s(Profile, "Y89bt/pi8lrdHE1hdS9fijgV/R0=");
+_s(Profile, "oDgYfYHkD9Wkv4hrAPCkI/ev3YU=");
 _c = Profile;
 exports.default = Profile;
 var _c;
