@@ -35435,10 +35435,17 @@ class About extends (0, _reactDefault.default).Component {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
-                    name: "Abhijit Mishra From Class Based "
+                    name: "First Child "
                 }, void 0, false, {
                     fileName: "src/component/About.js",
                     lineNumber: 31,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
+                    name: "Second Child "
+                }, void 0, false, {
+                    fileName: "src/component/About.js",
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this)
             ]
@@ -35454,9 +35461,16 @@ exports.default = About; /**
  * 
  * Parent Constructor
  * Parent render
- * Child Constructor
- * Child render
- * child ComponentDidMount
+ * First Child Constructor
+ * First Child render
+ * Second Child Constructor
+ * Second Child render
+ * 
+ * 
+ * DOM UPDATED FOR CHILDREN
+ * 
+ * First ComponentDidMount
+ * Second ComponentDidMount
  * Parent ComponentDidMount
  * 
  */ 
@@ -35485,13 +35499,13 @@ class Profile extends (0, _reactDefault.default).Component {
             count: 0,
             count2: 2
         };
-        console.log("child Constructor");
+        console.log("child Constructor" + this.props.name);
     }
     componentDidMount() {
-        console.log("child ComponentDidMount");
+        console.log("child ComponentDidMount" + this.props.name);
     }
     render() {
-        console.log("child render");
+        console.log("child render" + this.props.name);
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {

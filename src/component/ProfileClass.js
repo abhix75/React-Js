@@ -9,16 +9,16 @@ class Profile extends React.Component {
             count:0,
             count2:2
         }
-      console.log("child Constructor");
+      console.log("child Constructor"+ this.props.name);
     }
 
     componentDidMount()
     {
-        console.log("child ComponentDidMount")
+        console.log("child ComponentDidMount"+ this.props.name)
     }
   render() {
 
-    console.log("child render");
+    console.log("child render"+ this.props.name);
     return( 
     <div>
      <h1>Profile From class</h1>

@@ -32,7 +32,8 @@ class About extends React.Component {
       <div>
         <h1>About Page</h1>
         <p>The Owner of this company is Abhijit Mishra</p>
-        <Profile name={"Abhijit Mishra From Class Based "} />
+        <Profile name={"First Child "} />
+        <Profile name={"Second Child "} />
       </div>
     );
   }
@@ -47,9 +48,16 @@ export default About
  * 
  * Parent Constructor
  * Parent render
- * Child Constructor
- * Child render
- * child ComponentDidMount
+ * First Child Constructor
+ * First Child render
+ * Second Child Constructor
+ * Second Child render
+ * 
+ * 
+ * DOM UPDATED FOR CHILDREN
+ * 
+ * First ComponentDidMount
+ * Second ComponentDidMount
  * Parent ComponentDidMount
  * 
  */
