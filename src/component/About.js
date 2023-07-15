@@ -6,8 +6,8 @@ const About = () => {
     <div>
    <h1>About Page</h1>
    <p>The Owner of this company is Abhijit Mishra</p>
-   <Profile/>
-   <ProfileFunctional name={"Abhijit Mishra"}/>
+   <Profile name={"Abhijit Mishra From Class Based "}/>
+   <ProfileFunctional name={"Abhijit Mishra From Functionsl Based"}/>
     </div>
   );
 };

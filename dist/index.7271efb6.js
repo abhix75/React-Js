@@ -35412,13 +35412,15 @@ const About = ()=>{
                 lineNumber: 7,
                 columnNumber: 4
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
+                name: "Abhijit Mishra From Class Based "
+            }, void 0, false, {
                 fileName: "src/component/About.js",
                 lineNumber: 8,
                 columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
-                name: "Abhijit Mishra"
+                name: "Abhijit Mishra From Functionsl Based"
             }, void 0, false, {
                 fileName: "src/component/About.js",
                 lineNumber: 9,
@@ -35455,9 +35457,27 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class Profile extends (0, _reactDefault.default).Component {
     render() {
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Profile From class"
-        }, void 0, false, {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Profile From class"
+                }, void 0, false, {
+                    fileName: "src/component/ProfileClass.js",
+                    lineNumber: 5,
+                    columnNumber: 6
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: [
+                        "Name:",
+                        this.props.name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/component/ProfileClass.js",
+                    lineNumber: 6,
+                    columnNumber: 6
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "src/component/ProfileClass.js",
             lineNumber: 4,
             columnNumber: 12
@@ -35482,21 +35502,30 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Profile = (props)=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "Profile From Functional Component"
-    }, void 0, false, {
-        fileName: "src/component/Profile.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined), /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            "Name:",
-            props.name
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Profile From Functional Component"
+            }, void 0, false, {
+                fileName: "src/component/Profile.js",
+                lineNumber: 3,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: [
+                    "Name:",
+                    props.name
+                ]
+            }, void 0, true, {
+                fileName: "src/component/Profile.js",
+                lineNumber: 4,
+                columnNumber: 7
+            }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/Profile.js",
         lineNumber: 2,
-        columnNumber: 54
+        columnNumber: 10
     }, undefined);
 };
 _c = Profile;
