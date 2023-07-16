@@ -12,24 +12,29 @@ class Profile extends React.Component {
     console.log("child Constructor");
   }
 
-  async componentDidMount() {
-    const data = await fetch("https://api.github.com/users/abhix75");
-    const json = await data.json();
+  // async componentDidMount() {
+  //   const data = await fetch("https://api.github.com/users/abhix75");
+  //   const json = await data.json();
 
-    this.setState({
-      userInfo: json,
-    });
+  //   this.setState({
+  //     userInfo: json,
+  //   });
+  //   console.log("child ComponentDidMount");
+  // }
+  componentDidMount() {
     console.log("child ComponentDidMount");
+    this.timer = setInterval(() => {
+      console.log("Namaste React")
+    }, 1000);
   }
-  componentDidUpdate(){
-    console.log("child  ComponentDidUpdate")
+  componentDidUpdate() {
+    console.log("child  ComponentDidUpdate");
   }
-  componentWillUnmount()
-  {
-    console.log("componentWillUnmount")
+  componentWillUnmount() {
+    console.log("componentWillUnmount");
   }
   render() {
-    console.log("child render" );
+    console.log("child render");
     return (
       <div>
         <h1>Profile From class</h1>
@@ -44,7 +49,6 @@ class Profile extends React.Component {
   }
 }
 export default Profile;
-
 
 /**
  * 
