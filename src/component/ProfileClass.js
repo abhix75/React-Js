@@ -1,38 +1,59 @@
 import React from "react";
 class Profile extends React.Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props)
-    {
-        super(props);
+    this.state = {
+      userInfo: {
+        name: "",
+        bio: " ",
+      },
+    };
+    console.log("child Constructor" + this.props.name);
+  }
 
-        this.state={
-            count:0,
-            count2:2
-        }
-      console.log("child Constructor"+ this.props.name);
-    }
+  async componentDidMount() {
+    const data = await fetch("https://api.github.com/users/abhix75");
+    const json = await data.json();
 
-    componentDidMount()
-    {
-        console.log("child ComponentDidMount"+ this.props.name)
-    }
+    this.setState({
+      userInfo: json,
+    });
+    console.log("child ComponentDidMount" + this.props.name);
+  }
   render() {
-
-    console.log("child render"+ this.props.name);
-    return( 
-    <div>
-     <h1>Profile From class</h1>
-     <h3>Name:{this.props.name}</h3>
-     <h3>Count:{this.state.count}</h3>
-     <h3>Count:{this.state.count2}</h3>
-     <button onClick={()=>{
-        this.setState({
-            count:1,
-            count2:5
-        })
-     }}>Count</button>
-
-    </div> ) ;
+    console.log("child render" + this.props.name);
+    return (
+      <div>
+        <h1>Profile From class</h1>
+        <h3>Name:{this.state.userInfo.name}</h3>
+        <h3>
+          Avatar:
+          <img src={this.state.userInfo.avatar_url} />
+        </h3>
+        <h3>Bio:{this.state.userInfo.bio}</h3>
+      </div>
+    );
   }
 }
 export default Profile;
+
+
+/**
+ * 
+ * ORDER OF EXECUTION
+ * 
+ * Parent Constructor
+ * Parent render
+ * Child Constructor
+ * Child render
+ * 
+ * 
+ * DOM IS UPDATED
+ * JSON IS LOGGED IN CONSOLE
+ * 
+ * 
+ * Child ComponentDidMount
+ * ParentComponentDidMount
+ * 
+ */

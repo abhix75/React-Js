@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Profile from "./ProfileClass";
+//import Profile from "./ProfileClass";
 import ProfileFunctional from "./Profile";
 import React from "react";
 // const About = () => {
@@ -32,8 +32,7 @@ class About extends React.Component {
       <div>
         <h1>About Page</h1>
         <p>The Owner of this company is Abhijit Mishra</p>
-        <Profile name={"First Child "} />
-        <Profile name={"Second Child "} />
+        <Outlet/>
       </div>
     );
   }
