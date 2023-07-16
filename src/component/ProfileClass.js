@@ -31,6 +31,8 @@ class Profile extends React.Component {
     console.log("child  ComponentDidUpdate");
   }
   componentWillUnmount() {
+
+    clearInterval(this.timer);
     console.log("componentWillUnmount");
   }
   render() {

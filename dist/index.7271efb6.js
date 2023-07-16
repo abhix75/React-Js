@@ -35833,6 +35833,7 @@ class Profile extends (0, _reactDefault.default).Component {
         console.log("child  ComponentDidUpdate");
     }
     componentWillUnmount() {
+        clearInterval(this.timer);
         console.log("componentWillUnmount");
     }
     render() {
@@ -35843,7 +35844,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     children: "Profile From class"
                 }, void 0, false, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35853,7 +35854,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35863,13 +35864,13 @@ class Profile extends (0, _reactDefault.default).Component {
                             src: this.state.userInfo.avatar_url
                         }, void 0, false, {
                             fileName: "src/component/ProfileClass.js",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35879,13 +35880,13 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 44,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/component/ProfileClass.js",
-            lineNumber: 37,
+            lineNumber: 38,
             columnNumber: 12
         }, this);
     }
