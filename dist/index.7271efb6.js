@@ -35391,62 +35391,65 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouterDom = require("react-router-dom");
-//import Profile from "./ProfileClass";
+var _profileClass = require("./ProfileClass");
+var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
 var _profile = require("./Profile");
 var _profileDefault = parcelHelpers.interopDefault(_profile);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-// const About = () => {
-//   return (
-//     <div>
-//    <h1>About Page</h1>
-//    <p>The Owner of this company is Abhijit Mishra</p>
-//    <Profile name={"Abhijit Mishra From Class Based "}/>
-//    <ProfileFunctional name={"Abhijit Mishra From Functionsl Based"}/>
-//     </div>
-//   );
-// };
-// export default About;
-class About extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-    // console.log("Parent Constructor");
-    }
-    componentDidMount() {
-    // console.log("Parent ComponentDidMount");
-    }
-    render() {
-        // console.log("Parent render");
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "About Page"
-                }, void 0, false, {
-                    fileName: "src/component/About.js",
-                    lineNumber: 31,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "The Owner of this company is Abhijit Mishra"
-                }, void 0, false, {
-                    fileName: "src/component/About.js",
-                    lineNumber: 32,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                    fileName: "src/component/About.js",
-                    lineNumber: 33,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/component/About.js",
-            lineNumber: 30,
-            columnNumber: 12
-        }, this);
-    }
-}
-exports.default = About; /**
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "About Page"
+            }, void 0, false, {
+                fileName: "src/component/About.js",
+                lineNumber: 7,
+                columnNumber: 4
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "The Owner of this company is Abhijit Mishra"
+            }, void 0, false, {
+                fileName: "src/component/About.js",
+                lineNumber: 8,
+                columnNumber: 4
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
+                name: "Abhijit Mishra From Functionsl Based"
+            }, void 0, false, {
+                fileName: "src/component/About.js",
+                lineNumber: 10,
+                columnNumber: 4
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/component/About.js",
+        lineNumber: 6,
+        columnNumber: 10
+    }, undefined);
+};
+_c = About;
+exports.default = About; // class About extends React.Component {
+ //   constructor(props){
+ //       super(props)
+ //       // console.log("Parent Constructor");
+ //   }
+ //   componentDidMount(){
+ //     // console.log("Parent ComponentDidMount");
+ //   }
+ //   render() {
+ //     // console.log("Parent render");
+ //     return (
+ //       <div>
+ //         <h1>About Page</h1>
+ //         <p>The Owner of this company is Abhijit Mishra</p>
+ //         <Outlet />
+ //       </div>
+ //     );
+ //   }
+ // }
+ // export default About
+ /**
  * ORDER OF EXECUTION 
  * 
  * Parent Constructor
@@ -35464,13 +35467,15 @@ exports.default = About; /**
  * Parent ComponentDidMount
  * 
  */ 
+var _c;
+$RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$77f7.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./Profile":"7kLfj","react":"21dqq"}],"7kLfj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./Profile":"7kLfj","react":"21dqq","./ProfileClass":"bMaBv"}],"7kLfj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8530 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35481,17 +35486,23 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
 const Profile = (props)=>{
     _s();
     const [count, setCount] = (0, _react.useState)(0);
+    (0, _react.useEffect)(()=>{
+        setInterval(()=>{
+            console.log("Namaste React");
+        }, 1000);
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Profile From Functional Component"
             }, void 0, false, {
                 fileName: "src/component/Profile.js",
-                lineNumber: 5,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35501,7 +35512,7 @@ const Profile = (props)=>{
                 ]
             }, void 0, true, {
                 fileName: "src/component/Profile.js",
-                lineNumber: 6,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35511,7 +35522,7 @@ const Profile = (props)=>{
                 ]
             }, void 0, true, {
                 fileName: "src/component/Profile.js",
-                lineNumber: 7,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35521,23 +35532,147 @@ const Profile = (props)=>{
                 children: "Count"
             }, void 0, false, {
                 fileName: "src/component/Profile.js",
-                lineNumber: 8,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/Profile.js",
-        lineNumber: 4,
+        lineNumber: 9,
         columnNumber: 10
     }, undefined);
 };
-_s(Profile, "oDgYfYHkD9Wkv4hrAPCkI/ev3YU=");
+_s(Profile, "/xL7qdScToREtqzbt5GZ1kHtYjQ=");
 _c = Profile;
 exports.default = Profile;
 var _c;
 $RefreshReg$(_c, "Profile");
 
   $parcel$ReactRefreshHelpers$8530.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bMaBv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8d39 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8d39.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Profile extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            userInfo: {
+                name: "",
+                bio: " "
+            }
+        };
+        console.log("child Constructor");
+    }
+    // async componentDidMount() {
+    //   const data = await fetch("https://api.github.com/users/abhix75");
+    //   const json = await data.json();
+    //   this.setState({
+    //     userInfo: json,
+    //   });
+    //   console.log("child ComponentDidMount");
+    // }
+    componentDidMount() {
+        console.log("child ComponentDidMount");
+        this.timer = setInterval(()=>{
+            console.log("Namaste React");
+        }, 1000);
+    }
+    componentDidUpdate() {
+        console.log("child  ComponentDidUpdate");
+    }
+    componentWillUnmount() {
+        clearInterval(this.timer);
+        console.log("componentWillUnmount");
+    }
+    render() {
+        console.log("child render");
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Profile From class"
+                }, void 0, false, {
+                    fileName: "src/component/ProfileClass.js",
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: [
+                        "Name:",
+                        this.state.userInfo.name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/component/ProfileClass.js",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: [
+                        "Avatar:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: this.state.userInfo.avatar_url
+                        }, void 0, false, {
+                            fileName: "src/component/ProfileClass.js",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/component/ProfileClass.js",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: [
+                        "Bio:",
+                        this.state.userInfo.bio
+                    ]
+                }, void 0, true, {
+                    fileName: "src/component/ProfileClass.js",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/component/ProfileClass.js",
+            lineNumber: 38,
+            columnNumber: 12
+        }, this);
+    }
+}
+exports.default = Profile; /**
+ * 
+ * ORDER OF EXECUTION
+ * 
+
+ * Child Constructor
+ * Child render
+ * 
+ * 
+ * DOM IS UPDATED
+ * JSON IS LOGGED IN CONSOLE
+ * 
+ * 
+ * Child ComponentDidMount
+ * Child Render
+ * 
+ * Child ComponentDidUpdate
+ * 
+ */ 
+
+  $parcel$ReactRefreshHelpers$8d39.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -35792,130 +35927,6 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../constant":"jVIFP","./shimmer":"bltIQ"}],"bMaBv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8d39 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8d39.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class Profile extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            userInfo: {
-                name: "",
-                bio: " "
-            }
-        };
-        console.log("child Constructor");
-    }
-    // async componentDidMount() {
-    //   const data = await fetch("https://api.github.com/users/abhix75");
-    //   const json = await data.json();
-    //   this.setState({
-    //     userInfo: json,
-    //   });
-    //   console.log("child ComponentDidMount");
-    // }
-    componentDidMount() {
-        console.log("child ComponentDidMount");
-        this.timer = setInterval(()=>{
-            console.log("Namaste React");
-        }, 1000);
-    }
-    componentDidUpdate() {
-        console.log("child  ComponentDidUpdate");
-    }
-    componentWillUnmount() {
-        clearInterval(this.timer);
-        console.log("componentWillUnmount");
-    }
-    render() {
-        console.log("child render");
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Profile From class"
-                }, void 0, false, {
-                    fileName: "src/component/ProfileClass.js",
-                    lineNumber: 39,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: [
-                        "Name:",
-                        this.state.userInfo.name
-                    ]
-                }, void 0, true, {
-                    fileName: "src/component/ProfileClass.js",
-                    lineNumber: 40,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: [
-                        "Avatar:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: this.state.userInfo.avatar_url
-                        }, void 0, false, {
-                            fileName: "src/component/ProfileClass.js",
-                            lineNumber: 43,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/component/ProfileClass.js",
-                    lineNumber: 41,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: [
-                        "Bio:",
-                        this.state.userInfo.bio
-                    ]
-                }, void 0, true, {
-                    fileName: "src/component/ProfileClass.js",
-                    lineNumber: 45,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/component/ProfileClass.js",
-            lineNumber: 38,
-            columnNumber: 12
-        }, this);
-    }
-}
-exports.default = Profile; /**
- * 
- * ORDER OF EXECUTION
- * 
-
- * Child Constructor
- * Child render
- * 
- * 
- * DOM IS UPDATED
- * JSON IS LOGGED IN CONSOLE
- * 
- * 
- * Child ComponentDidMount
- * Child Render
- * 
- * Child ComponentDidUpdate
- * 
- */ 
-
-  $parcel$ReactRefreshHelpers$8d39.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../constant":"jVIFP","./shimmer":"bltIQ"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
 
 //# sourceMappingURL=index.7271efb6.js.map
