@@ -35410,38 +35410,38 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 class About extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
-        console.log("Parent Constructor");
+    // console.log("Parent Constructor");
     }
     componentDidMount() {
-        console.log("Parent ComponentDidMount");
+    // console.log("Parent ComponentDidMount");
     }
     render() {
-        console.log("Parent render");
+        // console.log("Parent render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "About Page"
                 }, void 0, false, {
                     fileName: "src/component/About.js",
-                    lineNumber: 29,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: "The Owner of this company is Abhijit Mishra"
                 }, void 0, false, {
                     fileName: "src/component/About.js",
-                    lineNumber: 30,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/component/About.js",
-                    lineNumber: 31,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/component/About.js",
-            lineNumber: 28,
+            lineNumber: 30,
             columnNumber: 12
         }, this);
     }
@@ -35813,7 +35813,7 @@ class Profile extends (0, _reactDefault.default).Component {
                 bio: " "
             }
         };
-        console.log("child Constructor" + this.props.name);
+        console.log("child Constructor");
     }
     async componentDidMount() {
         const data = await fetch("https://api.github.com/users/abhix75");
@@ -35821,17 +35821,20 @@ class Profile extends (0, _reactDefault.default).Component {
         this.setState({
             userInfo: json
         });
-        console.log("child ComponentDidMount" + this.props.name);
+        console.log("child ComponentDidMount");
+    }
+    componentDidUpdate() {
+        console.log("child  ComponentDidUpdate");
     }
     render() {
-        console.log("child render" + this.props.name);
+        console.log("child render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "Profile From class"
                 }, void 0, false, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 24,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35841,7 +35844,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 25,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35851,13 +35854,13 @@ class Profile extends (0, _reactDefault.default).Component {
                             src: this.state.userInfo.avatar_url
                         }, void 0, false, {
                             fileName: "src/component/ProfileClass.js",
-                            lineNumber: 28,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 26,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35867,13 +35870,13 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 30,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/component/ProfileClass.js",
-            lineNumber: 23,
+            lineNumber: 26,
             columnNumber: 12
         }, this);
     }

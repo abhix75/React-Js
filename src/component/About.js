@@ -20,19 +20,19 @@ class About extends React.Component {
   constructor(props){
       super(props)
 
-      console.log("Parent Constructor");
+      // console.log("Parent Constructor");
   }
 
   componentDidMount(){
-    console.log("Parent ComponentDidMount");
+    // console.log("Parent ComponentDidMount");
   }
   render() {
-    console.log("Parent render");
+    // console.log("Parent render");
     return (
       <div>
         <h1>About Page</h1>
         <p>The Owner of this company is Abhijit Mishra</p>
-        <Outlet/>
+        <Outlet />
       </div>
     );
   }

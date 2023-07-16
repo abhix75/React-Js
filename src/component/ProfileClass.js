@@ -9,7 +9,7 @@ class Profile extends React.Component {
         bio: " ",
       },
     };
-    console.log("child Constructor" + this.props.name);
+    console.log("child Constructor");
   }
 
   async componentDidMount() {
@@ -19,10 +19,13 @@ class Profile extends React.Component {
     this.setState({
       userInfo: json,
     });
-    console.log("child ComponentDidMount" + this.props.name);
+    console.log("child ComponentDidMount");
+  }
+  componentDidUpdate(){
+    console.log("child  ComponentDidUpdate")
   }
   render() {
-    console.log("child render" + this.props.name);
+    console.log("child render" );
     return (
       <div>
         <h1>Profile From class</h1>
