@@ -9,6 +9,7 @@ import Error from "./component/Error.js";
 import Contact from "./component/contact.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
 import Profile from "./component/ProfileClass.js";
+import Instamart from "./component/Instamart.js";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 
 //Body
@@ -53,6 +54,11 @@ const approuter = createBrowserRouter([
         path: "/restaurant/:id",
         element: <RestaurantMenu />,
       },
+      {
+        path: "/instamart",
+        element: <Instamart/>,
+      },
+
 
     ]
    

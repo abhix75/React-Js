@@ -7,7 +7,7 @@ const RestaurantMenu = () => {
   const { id } = params;
 
   const { restaurant, restaurantmenu } = useRestaurant(id);
-
+  
   return !restaurant ? (
     <Shimmer />
   ) : (
