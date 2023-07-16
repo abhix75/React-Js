@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 //default Import
 import Header from "./component/Header.js";
@@ -54,7 +54,11 @@ const approuter = createBrowserRouter([
       },
       {
         path: "/instamart",
-        element: <Instamart />,
+        element: (
+          <Suspense>
+            <Instamart />
+          </Suspense>
+        ),
       },
     ],
   },

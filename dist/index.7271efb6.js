@@ -3048,7 +3048,13 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
             },
             {
                 path: "/instamart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 46,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 45,
                     columnNumber: 14
@@ -3062,7 +3068,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: approuter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 49,
+    lineNumber: 51,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
