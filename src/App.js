@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 import Header from "./component/Header.js";
 import Body from "./component/Body.js";
 import Footer from "./component/Footer.js";
-import About from "./component/About.js";
 import Error from "./component/Error.js";
 import Contact from "./component/contact.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
@@ -13,6 +12,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Shimmer } from "react-shimmer";
 
 const Instamart = lazy(() => import("./component/Instamart"));
+const About = lazy(() => import("./component/About.js"));
 //Body
 
 const AppLayout = () => {
@@ -37,7 +37,11 @@ const approuter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <About />
+          </Suspense>
+        ),
         children: [
           {
             path: "profile",
@@ -56,7 +60,7 @@ const approuter = createBrowserRouter([
       {
         path: "/instamart",
         element: (
-          <Suspense fallback={<Shimmer/>}>
+          <Suspense fallback={<Shimmer />}>
             <Instamart />
           </Suspense>
         ),
