@@ -10,6 +10,7 @@ import Contact from "./component/contact.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
 import Profile from "./component/ProfileClass.js";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { Shimmer } from "react-shimmer";
 
 const Instamart = lazy(() => import("./component/Instamart"));
 //Body
@@ -55,7 +56,7 @@ const approuter = createBrowserRouter([
       {
         path: "/instamart",
         element: (
-          <Suspense>
+          <Suspense fallback={<Shimmer/>}>
             <Instamart />
           </Suspense>
         ),
