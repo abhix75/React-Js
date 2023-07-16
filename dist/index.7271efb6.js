@@ -2964,43 +2964,43 @@ var _restaurantMenuJs = require("./component/RestaurantMenu.js");
 var _restaurantMenuJsDefault = parcelHelpers.interopDefault(_restaurantMenuJs);
 var _profileClassJs = require("./component/ProfileClass.js");
 var _profileClassJsDefault = parcelHelpers.interopDefault(_profileClassJs);
-var _instamartJs = require("./component/Instamart.js");
-var _instamartJsDefault = parcelHelpers.interopDefault(_instamartJs);
 var _reactRouterDom = require("react-router-dom");
+const Instamart = /*#__PURE__*/ (0, _react.lazy)(()=>require("3a8c40c6df5c1e05"));
+_c = Instamart;
 //Body
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 20,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_c = AppLayout;
+_c1 = AppLayout;
 const approuter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 26,
+            lineNumber: 25,
             columnNumber: 12
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 27,
+            lineNumber: 26,
             columnNumber: 17
         }, undefined),
         children: [
@@ -3008,7 +3008,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 30,
+                    lineNumber: 29,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3016,7 +3016,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 33,
+                    lineNumber: 32,
                     columnNumber: 14
                 }, undefined),
                 children: [
@@ -3024,7 +3024,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profile",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassJsDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 36,
+                            lineNumber: 35,
                             columnNumber: 16
                         }, undefined)
                     }
@@ -3034,7 +3034,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 40,
+                    lineNumber: 39,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3042,15 +3042,15 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuJsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 43,
+                    lineNumber: 42,
                     columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/instamart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _instamartJsDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 46,
+                    lineNumber: 45,
                     columnNumber: 14
                 }, undefined)
             }
@@ -3062,18 +3062,19 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: approuter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 50,
+    lineNumber: 49,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "AppLayout");
+var _c, _c1;
+$RefreshReg$(_c, "Instamart");
+$RefreshReg$(_c1, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./component/Header.js":"knXDc","./component/Body.js":"iizf5","./component/Footer.js":"4ifUV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./component/About.js":"94Koj","./component/Error.js":"cosKY","./component/contact.js":"jR9xM","./component/RestaurantMenu.js":"kMuXm","react-router-dom":"9xmpe","./component/ProfileClass.js":"bMaBv","./component/Instamart.js":"5aN6S"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./component/Header.js":"knXDc","./component/Body.js":"iizf5","./component/Footer.js":"4ifUV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./component/About.js":"94Koj","./component/Error.js":"cosKY","./component/contact.js":"jR9xM","./component/RestaurantMenu.js":"kMuXm","react-router-dom":"9xmpe","./component/ProfileClass.js":"bMaBv","3a8c40c6df5c1e05":"dHsBF"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -36035,50 +36036,74 @@ exports.default = useRestaurant;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constant":"jVIFP"}],"5aN6S":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$36b8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$36b8.prelude(module);
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constant":"jVIFP"}],"dHsBF":[function(require,module,exports) {
+module.exports = require("dc6d2bd2e22817f5")(require("8cbbc13b0c017a48").getBundleURL("aXMci") + "Instamart.add16a2c.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("5aN6S"));
 
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Instamart = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Instamart"
-            }, void 0, false, {
-                fileName: "src/component/Instamart.js",
-                lineNumber: 3,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "100s of Instamart Inside it"
-            }, void 0, false, {
-                fileName: "src/component/Instamart.js",
-                lineNumber: 4,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/component/Instamart.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Instamart;
-exports.default = Instamart;
-var _c;
-$RefreshReg$(_c, "Instamart");
+},{"dc6d2bd2e22817f5":"61B45","8cbbc13b0c017a48":"lgJ39"}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require("ca2a84f7fa4a3bb0");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName("script");
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement("link");
+        preloadLink.href = bundle;
+        preloadLink.rel = "preload";
+        preloadLink.as = "script";
+        document.head.appendChild(preloadLink);
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+});
 
-  $parcel$ReactRefreshHelpers$36b8.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
+},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case "preload":
+            return cachedPreloads;
+        case "prefetch":
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
+    }
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
+};
+
+},{}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
 
 //# sourceMappingURL=index.7271efb6.js.map

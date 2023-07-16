@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import ReactDOM from "react-dom/client";
 //default Import
 import Header from "./component/Header.js";
@@ -9,9 +9,9 @@ import Error from "./component/Error.js";
 import Contact from "./component/contact.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
 import Profile from "./component/ProfileClass.js";
-import Instamart from "./component/Instamart.js";
-import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
+const Instamart = lazy(() => import("./component/Instamart"));
 //Body
 
 const AppLayout = () => {
@@ -27,10 +27,9 @@ const AppLayout = () => {
 const approuter = createBrowserRouter([
   {
     path: "/",
-   element:<AppLayout/>,
-   errorElement:<Error/>,
-   children:
-    [
+    element: <AppLayout />,
+    errorElement: <Error />,
+    children: [
       {
         path: "/",
         element: <Body />,
@@ -38,13 +37,12 @@ const approuter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-        children:
-        [
+        children: [
           {
-            path:"profile",
-            element:<Profile />
-          }
-        ]
+            path: "profile",
+            element: <Profile />,
+          },
+        ],
       },
       {
         path: "/contact",
@@ -56,14 +54,10 @@ const approuter = createBrowserRouter([
       },
       {
         path: "/instamart",
-        element: <Instamart/>,
+        element: <Instamart />,
       },
-
-
-    ]
-   
+    ],
   },
-
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
