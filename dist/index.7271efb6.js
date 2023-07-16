@@ -35826,6 +35826,9 @@ class Profile extends (0, _reactDefault.default).Component {
     componentDidUpdate() {
         console.log("child  ComponentDidUpdate");
     }
+    componentWillUnmount() {
+        console.log("componentWillUnmount");
+    }
     render() {
         console.log("child render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35834,7 +35837,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     children: "Profile From class"
                 }, void 0, false, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 27,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35844,7 +35847,7 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 28,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35854,13 +35857,13 @@ class Profile extends (0, _reactDefault.default).Component {
                             src: this.state.userInfo.avatar_url
                         }, void 0, false, {
                             fileName: "src/component/ProfileClass.js",
-                            lineNumber: 31,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 29,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35870,13 +35873,13 @@ class Profile extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/component/ProfileClass.js",
-                    lineNumber: 33,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/component/ProfileClass.js",
-            lineNumber: 26,
+            lineNumber: 29,
             columnNumber: 12
         }, this);
     }
@@ -35885,8 +35888,7 @@ exports.default = Profile; /**
  * 
  * ORDER OF EXECUTION
  * 
- * Parent Constructor
- * Parent render
+
  * Child Constructor
  * Child render
  * 
@@ -35896,7 +35898,9 @@ exports.default = Profile; /**
  * 
  * 
  * Child ComponentDidMount
- * ParentComponentDidMount
+ * Child Render
+ * 
+ * Child ComponentDidUpdate
  * 
  */ 
 

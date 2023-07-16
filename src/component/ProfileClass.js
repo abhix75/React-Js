@@ -24,6 +24,10 @@ class Profile extends React.Component {
   componentDidUpdate(){
     console.log("child  ComponentDidUpdate")
   }
+  componentWillUnmount()
+  {
+    console.log("componentWillUnmount")
+  }
   render() {
     console.log("child render" );
     return (
@@ -46,8 +50,7 @@ export default Profile;
  * 
  * ORDER OF EXECUTION
  * 
- * Parent Constructor
- * Parent render
+
  * Child Constructor
  * Child render
  * 
@@ -57,6 +60,8 @@ export default Profile;
  * 
  * 
  * Child ComponentDidMount
- * ParentComponentDidMount
+ * Child Render
+ * 
+ * Child ComponentDidUpdate
  * 
  */
