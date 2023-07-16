@@ -49,3 +49,7 @@
    .menu {
     display: flex;
 }
+
+.menuimage{
+    width: 200px;
+}

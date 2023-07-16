@@ -3,12 +3,7 @@ import { RestaurantList } from "../constant";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
-function filterData(searchText, restaurants) {
-  const filterData = restaurants.filter((restaurant) =>
-    restaurant?.data?.name?.toLowerCase()?.includes(searchText?.toLowerCase())
-  );
-  return filterData;
-}
+import {filterData} from "../utils/helper"
 const Body = () => {
   const [allrestaurant, setAllrestaurant] = useState([]);
   const [filterrestaurants, setFilterRestaurants] = useState([]);

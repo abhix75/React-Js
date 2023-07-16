@@ -1,40 +1,12 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Shimmer from "./shimmer";
-// import { IMG_CDN } from "../constant";
+import useRestaurant from "../utils/useRestaurant";
 import { IMG_CDN_URL } from "../constant";
 const RestaurantMenu = () => {
   const params = useParams();
   const { id } = params;
-  const [restaurant, setRestaurant] = useState(null);
-  const [restaurantmenu, setRestaurantMenu] = useState(null);
 
-  useEffect(() => {
-    getRestaurantInfo();
-  }, []);
-
-  async function getRestaurantInfo() {
-    try {
-      const data = await fetch(
-        "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=" +
-          id
-      );
-      const json = await data.json();
-      console.log(json.data);
-      setRestaurant(json.data.cards[0].card.card.info);
-      console.log(
-        "Menus",
-        json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
-          .itemCards
-      );
-      setRestaurantMenu(
-        json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
-          .itemCards
-      );
-    } catch (error) {
-      console.error("Error fetching restaurant data:", error);
-    }
-  }
+  const { restaurant, restaurantmenu } = useRestaurant(id);
 
   return !restaurant ? (
     <Shimmer />
@@ -54,7 +26,7 @@ const RestaurantMenu = () => {
         <h1>Menu</h1>
         <ul>
           {Object.values(restaurantmenu).map((info) => (
-            <li key={info.id}>{info.card.info.name}</li>
+            <li key={info.card.info.id}>{info.card.info.name}  <ul><img className="menuimage" src= {IMG_CDN_URL+info.card.info.imageId}/></ul></li>
           ))}
         </ul>
       </div>
