@@ -4,14 +4,21 @@ const Profile = (props) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    setInterval(()=>{
+    console.log("UseEffect")
+    const timer=setInterval(()=>{
       console.log("Namaste React");
     },1000)
 
+  return ()=>
+  {
+    clearInterval(timer);
+    console.log("UseEffect return ")
+  };
 
-    
   }, []);
+  console.log("render");
   return (
+   
     <div>
       <h1>Profile From Functional Component</h1>
       <h3>Name:{props.name}</h3>

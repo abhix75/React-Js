@@ -35492,17 +35492,23 @@ const Profile = (props)=>{
     _s();
     const [count, setCount] = (0, _react.useState)(0);
     (0, _react.useEffect)(()=>{
-        setInterval(()=>{
+        console.log("UseEffect");
+        const timer = setInterval(()=>{
             console.log("Namaste React");
         }, 1000);
+        return ()=>{
+            clearInterval(timer);
+            console.log("UseEffect return ");
+        };
     }, []);
+    console.log("render");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Profile From Functional Component"
             }, void 0, false, {
                 fileName: "src/component/Profile.js",
-                lineNumber: 10,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35512,7 +35518,7 @@ const Profile = (props)=>{
                 ]
             }, void 0, true, {
                 fileName: "src/component/Profile.js",
-                lineNumber: 11,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35522,7 +35528,7 @@ const Profile = (props)=>{
                 ]
             }, void 0, true, {
                 fileName: "src/component/Profile.js",
-                lineNumber: 12,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35532,13 +35538,13 @@ const Profile = (props)=>{
                 children: "Count"
             }, void 0, false, {
                 fileName: "src/component/Profile.js",
-                lineNumber: 13,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/Profile.js",
-        lineNumber: 9,
+        lineNumber: 15,
         columnNumber: 10
     }, undefined);
 };
