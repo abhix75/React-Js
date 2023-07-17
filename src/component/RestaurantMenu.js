@@ -11,7 +11,7 @@ const RestaurantMenu = () => {
   return !restaurant ? (
     <Shimmer />
   ) : (
-    <div className="menu">
+    <div className="flex flex-wrap">
       <div>
         <h1>Restaurant id: {id}</h1>
         <h2>Restaurant name: {restaurant.name}</h2>
@@ -26,7 +26,7 @@ const RestaurantMenu = () => {
         <h1>Menu</h1>
         <ul>
           {Object.values(restaurantmenu).map((info) => (
-            <li key={info.card.info.id}>{info.card.info.name}  <ul><img className="menuimage" src= {IMG_CDN_URL+info.card.info.imageId}/></ul></li>
+            <li className=" flex justify-between bg-pink-50 shadow-lg"key={info.card.info.id}><ul className="font-bold">{info.card.info.name}</ul>  <ul><img className="w-52 " src= {IMG_CDN_URL+info.card.info.imageId}/></ul></li>
           ))}
         </ul>
       </div>

@@ -33,7 +33,10 @@ const approuter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body />,
+        element: <Body user={{
+          name:"Abhijit Food HUB",
+          email:"abhijitmishraak10@gmail.com"
+        }}/>,
       },
       {
         path: "/about",

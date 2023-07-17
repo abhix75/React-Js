@@ -3007,7 +3007,12 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
         children: [
             {
                 path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {
+                    user: {
+                        name: "Abhijit Food HUB",
+                        email: "abhijitmishraak10@gmail.com"
+                    }
+                }, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 30,
                     columnNumber: 14
@@ -3019,12 +3024,12 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactShimmer.Shimmer), {}, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(About, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 34,
+                        lineNumber: 37,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 33,
+                    lineNumber: 36,
                     columnNumber: 14
                 }, undefined),
                 children: [
@@ -3032,7 +3037,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profile",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassJsDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 38,
+                            lineNumber: 41,
                             columnNumber: 16
                         }, undefined)
                     }
@@ -3042,7 +3047,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 42,
+                    lineNumber: 45,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3050,7 +3055,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuJsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 45,
+                    lineNumber: 48,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3060,12 +3065,12 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactShimmer.Shimmer), {}, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 49,
+                        lineNumber: 52,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 48,
+                    lineNumber: 51,
                     columnNumber: 14
                 }, undefined)
             }
@@ -3077,7 +3082,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: approuter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 54,
+    lineNumber: 57,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2;
@@ -33441,7 +33446,7 @@ var _helper = require("../utils/helper");
 var _useOnline = require("../utils/useOnline");
 var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
 var _s = $RefreshSig$();
-const Body = ()=>{
+const Body = ({ user })=>{
     _s();
     const [allrestaurant, setAllrestaurant] = (0, _react.useState)([]);
     const [filterrestaurants, setFilterRestaurants] = (0, _react.useState)([]);
@@ -33461,7 +33466,7 @@ const Body = ()=>{
         children: " You are Offline Please Check your Internet Connection"
     }, void 0, false, {
         fileName: "src/component/Body.js",
-        lineNumber: 24,
+        lineNumber: 26,
         columnNumber: 12
     }, undefined);
     //not render component
@@ -33470,7 +33475,7 @@ const Body = ()=>{
     //   return <h1>NO Restaurant Matches Your Search!!!</h1>;
     return allrestaurant?.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/component/Body.js",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 39
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -33485,7 +33490,7 @@ const Body = ()=>{
                         onChange: (e)=>setSearchTxt(e.target.value)
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -33499,13 +33504,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/component/Body.js",
-                lineNumber: 34,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33516,22 +33521,23 @@ const Body = ()=>{
                         children: [
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
-                                ...restaurant.data
+                                ...restaurant.data,
+                                user: user
                             }, void 0, false, {
                                 fileName: "src/component/Body.js",
-                                lineNumber: 49,
+                                lineNumber: 51,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, restaurant.data.id, true, {
                         fileName: "src/component/Body.js",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/component/Body.js",
-                lineNumber: 45,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined)
         ]
@@ -35124,7 +35130,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../constant");
-const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating })=>{
+const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating, user })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "w-52 p-2 m-2 shadow-lg bg-pink-50",
         children: [
@@ -35132,7 +35138,7 @@ const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating })=>{
                 src: (0, _constant.IMG_CDN_URL) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/component/RestaurantCard.js",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -35140,14 +35146,14 @@ const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating })=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/component/RestaurantCard.js",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "src/component/RestaurantCard.js",
-                lineNumber: 11,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -35157,13 +35163,23 @@ const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating })=>{
                 ]
             }, void 0, true, {
                 fileName: "src/component/RestaurantCard.js",
-                lineNumber: 12,
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    user.name,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/component/RestaurantCard.js",
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/RestaurantCard.js",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 10
     }, undefined);
 };
@@ -35572,7 +35588,7 @@ const RestaurantMenu = ()=>{
         lineNumber: 14,
         columnNumber: 24
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "menu",
+        className: "flex flex-wrap",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
@@ -35654,22 +35670,30 @@ const RestaurantMenu = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                         children: Object.values(restaurantmenu).map((info)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: " flex justify-between bg-pink-50 shadow-lg",
                                 children: [
-                                    info.card.info.name,
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "font-bold",
+                                        children: info.card.info.name
+                                    }, void 0, false, {
+                                        fileName: "src/component/RestaurantMenu.js",
+                                        lineNumber: 28,
+                                        columnNumber: 137
+                                    }, undefined),
                                     "  ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "menuimage",
+                                            className: "w-52 ",
                                             src: (0, _constant.IMG_CDN_URL) + info.card.info.imageId
                                         }, void 0, false, {
                                             fileName: "src/component/RestaurantMenu.js",
                                             lineNumber: 28,
-                                            columnNumber: 109
+                                            columnNumber: 195
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/component/RestaurantMenu.js",
                                         lineNumber: 28,
-                                        columnNumber: 105
+                                        columnNumber: 191
                                     }, undefined)
                                 ]
                             }, info.card.info.id, true, {

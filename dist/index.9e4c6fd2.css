@@ -263,8 +263,20 @@ img, video {
   height: 7rem;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
 .w-52 {
   width: 13rem;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .flex-wrap {
