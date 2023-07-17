@@ -27294,7 +27294,7 @@ var _s = $RefreshSig$();
 const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
         href: "/",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "Logo",
+            className: "h-28 p-2",
             alt: "Food_Villa_Logo",
             src: (0, _foodVillaJpgDefault.default)
         }, void 0, false, {
@@ -27313,7 +27313,7 @@ const Header = ()=>{
     _s();
     const [isLoggedIn, setIsLoggedIn] = (0, _react.useState)(false);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "flex justify-between bg-pink-50 shadow-lg",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "src/component/Header.js",
@@ -27323,12 +27323,14 @@ const Header = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "nav-items",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "flex py-10",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/",
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: "px-2",
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "src/component/Header.js",
@@ -27347,6 +27349,7 @@ const Header = ()=>{
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: "px-2",
                                     children: "About"
                                 }, void 0, false, {
                                     fileName: "src/component/Header.js",
@@ -27365,6 +27368,7 @@ const Header = ()=>{
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: "px-2",
                                     children: "Contact"
                                 }, void 0, false, {
                                     fileName: "src/component/Header.js",
@@ -27380,6 +27384,7 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/cart",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-2",
                                 children: "Cart"
                             }, void 0, false, {
                                 fileName: "src/component/Header.js",
@@ -27394,6 +27399,7 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/instamart",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-2",
                                 children: "Instamart"
                             }, void 0, false, {
                                 fileName: "src/component/Header.js",
@@ -27417,6 +27423,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             isLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "px-2",
                 onClick: ()=>setIsLoggedIn(false),
                 children: "Logout"
             }, void 0, false, {
@@ -27424,12 +27431,13 @@ const Header = ()=>{
                 lineNumber: 36,
                 columnNumber: 21
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "px-2",
                 onClick: ()=>setIsLoggedIn(true),
                 children: "LogIn"
             }, void 0, false, {
                 fileName: "src/component/Header.js",
                 lineNumber: 36,
-                columnNumber: 84
+                columnNumber: 101
             }, undefined)
         ]
     }, void 0, true, {
@@ -33467,11 +33475,11 @@ const Body = ()=>{
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-container",
+                className: "bg-pink-50 shadow-lg p-5 my-2 ",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
-                        className: "search-input",
+                        className: "search-input focus:bg-pink-200",
                         placeholder: "Search",
                         value: SearchTxt,
                         onChange: (e)=>setSearchTxt(e.target.value)
@@ -33481,7 +33489,7 @@ const Body = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "search-btn",
+                        className: "p-2 m-2 bg-purple-950 hover:bg-slate-500 text-white rounded-md",
                         onClick: ()=>{
                             // filter the data
                             const data = (0, _helper.filterData)(SearchTxt, allrestaurant);
@@ -33501,7 +33509,7 @@ const Body = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "Restaurant-List",
+                className: "flex flex-wrap",
                 children: filterrestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restaurant/" + restaurant.data.id,
@@ -35118,7 +35126,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../constant");
 const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
+        className: "w-52 p-2 m-2 shadow-lg bg-pink-50",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 src: (0, _constant.IMG_CDN_URL) + cloudinaryImageId
@@ -35128,6 +35136,7 @@ const RestaurantCard = ({ name, cuisines, cloudinaryImageId, avgRating })=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "font-bold text-xl",
                 children: name
             }, void 0, false, {
                 fileName: "src/component/RestaurantCard.js",
