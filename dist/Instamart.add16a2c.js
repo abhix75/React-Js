@@ -604,34 +604,80 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Instamart = ()=>{
+const Section = ({ title, description })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "border border-black m-2 p-2",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Instamart"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "font-bold text-xl",
+                children: title
             }, void 0, false, {
                 fileName: "src/component/Instamart.js",
-                lineNumber: 3,
+                lineNumber: 6,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "100s of Instamart Inside it"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: description
             }, void 0, false, {
                 fileName: "src/component/Instamart.js",
-                lineNumber: 4,
+                lineNumber: 7,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/Instamart.js",
-        lineNumber: 2,
+        lineNumber: 5,
         columnNumber: 10
     }, undefined);
 };
-_c = Instamart;
+_c = Section;
+const Instamart = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "font-bold text-3xl",
+                children: "InstaMart"
+            }, void 0, false, {
+                fileName: "src/component/Instamart.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "About Instamart",
+                description: "Hey budddy cjfsfvnvdshvsivsahfwofusdnmdiobjpfiafsb,ndihawp0i;fjdvbuPDISDKVHBFOOFIWFLJSIUWEFIASLSDUVHWEIDQPkdjdsjhbvoidsdjASHQEID BQSOSIOHDISHVP KVMA DFPBI   DKIVODQ HF I 'FBIWFDM NIHQD"
+            }, void 0, false, {
+                fileName: "src/component/Instamart.js",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "Team Instamart",
+                description: "skbakhfasfsldjlsdjlsjnlsjlsjmflsensnfsdnlsenvlsenlsenlsnvlsenflsnflasnf"
+            }, void 0, false, {
+                fileName: "src/component/Instamart.js",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "Career Instamart",
+                description: "bfdbfjhfkfjksnfksnfksnkanakn"
+            }, void 0, false, {
+                fileName: "src/component/Instamart.js",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/component/Instamart.js",
+        lineNumber: 11,
+        columnNumber: 10
+    }, undefined);
+};
+_c1 = Instamart;
 exports.default = Instamart;
-var _c;
-$RefreshReg$(_c, "Instamart");
+var _c, _c1;
+$RefreshReg$(_c, "Section");
+$RefreshReg$(_c1, "Instamart");
 
   $parcel$ReactRefreshHelpers$36b8.postlude(module);
 } finally {

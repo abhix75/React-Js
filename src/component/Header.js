@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Logo from "../asset/image/Food-Villa.jpg";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 //Named export
 const Title = () => (
   <a href="/">
@@ -10,7 +11,10 @@ const Title = () => (
 
 //Header
 const Header = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const token = localStorage.getItem("token");
+  const [isLoggedIn, setIsLoggedIn] = useState(token?.length === 100 ? true:false);
+  const navigate = useNavigate();
   return (
     <div className="flex justify-between bg-pink-50 shadow-lg">
       <Title />
@@ -37,9 +41,13 @@ const Header = () => {
         </ul>
       </div>
       {isLoggedIn ? (
-        <button className="px-2"  onClick={() => setIsLoggedIn(false)}>Logout</button>
+        <button className="px-2" onClick={() => setIsLoggedIn(false)}>
+          Logout
+        </button>
       ) : (
-        <button className="px-2" onClick={() => setIsLoggedIn(true)}>LogIn</button>
+        <button className="px-2" onClick={() => setIsLoggedIn(true)}>
+          LogIn
+        </button>
       )}
     </div>
   );

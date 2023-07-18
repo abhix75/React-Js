@@ -1,52 +1,49 @@
-export const MenuShimmer = () => {
-  return (
-    <div className="restaurant-menu">
-      <div className="restaurant-summary stroke-color animate">
-        <img className="shimmer-img stroke animate" />
-        <div className="restaurant-summary-details">
-          <h2 className="shimmer-w40  stroke animate"></h2>
-          <p className="shimmer-w20 stroke animate"></p>
-          <div className="shimmer-w60  stroke animate">
-          </div>
-        </div>
-      </div>
+import { Shimmer, Spinner } from "react-shimmer";
 
-      <div className="restaurant-menu-content">
-        <div className="menu-items-container">
-          <div className="menu-title-wrap ">
-            <h3 className="shimmer-w40 stroke animate"></h3>
-            <p className="shimmer-w20 stroke animate"></p>
-          </div>
-          <div className="menu-items-list">
-            { Array(shimmer_menu_card_unit).fill("").map( (element, index)  => 
-            <div className="shimmer-menu-card" key={index}>
-              <div className="shimmer-item-details">
-                <h3 className="shimmer-w40  stroke animate"></h3>
-                <p className="shimmer-w20  stroke animate"> </p>
-                <p className="shimmer-w60  stroke animate"></p>
-              </div>
-              <div className="shimmer-img-wrapper">
-                <img className="shimmer-img stroke animate" /> 
-                <div className="shimmer-btn stroke animate"> </div>
-              </div>
-            </div>
-            )}
-          </div>
-        </div>
+const ShimmerUI = () => {
+  return (
+    <div
+      data-testid="shimmer-UI"
+      className="flex flex-wrap justify-center mt-8 px-10"
+    >
+      <div className=" mx-14 shadow-lg">
+        <Shimmer height={55} width={1240} />
       </div>
+      {Array(15)
+        .fill("")
+        .map((e, index) => (
+          <div
+            key={index}
+            className="flex flex-col h-80 w-72 m-4 p-4 shadow-lg bg-slate-100"
+          >
+            <div className=" border ">
+              <Shimmer height={140} width={255} />
+            </div>
+            <div className=" py-4 h-10 ">
+              <Shimmer height={30} width={255} />
+            </div>
+            <div className=" py-4 h-12 truncate">
+              <Shimmer height={20} width={255} />
+            </div>
+            <div className="flex justify-between text-xs font-normal pt-2 ">
+              <span>
+                <Shimmer height={30} width={50} />
+              </span>
+              <span>.</span>
+              <span>
+                {" "}
+                <Shimmer height={30} width={50} />
+              </span>
+              <span>.</span>
+              <span>
+                <Shimmer height={30} width={50} />
+              </span>
+            </div>
+          </div>
+        ))}
     </div>
-  )
-}
-const Shimmer = () => {
-   return (
-     <div className="Restaurant-List">
-       {Array(10)
-         .fill("")
-         .map((e, index) => (
-           <div key={index} className="shimmer-card"></div>
-         ))}
-     </div>
-   );
- };
+  );
+};
+
  
- export default Shimmer;
+ export default ShimmerUI;

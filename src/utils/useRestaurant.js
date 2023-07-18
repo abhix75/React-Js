@@ -13,7 +13,7 @@ const useRestaurant = (id) => {
       const data = await fetch(FETCH_MENU + id);
       const json = await data.json();
       console.log(json.data);
-      setRestaurant(json.data.cards[0].card.card.info);
+      setRestaurant(json?.data?.cards[0]?.card?.card.info);
       console.log(
         "Menus",
         Object.values(
