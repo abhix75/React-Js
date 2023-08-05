@@ -3,21 +3,51 @@ import { createSlice } from "@reduxjs/toolkit";
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
-    items: [],
+    items: {},
+    totalItemsCount: 0,
+    deliveryAddress: {},
+    paymentMethod: {},
   },
   reducers: {
-    addItems: (state,action) => {
-        state.items.push(action.payload);
+    addItem: (state, action) => {
+      const item = state.items[action.payload.id];
+      const quantity =
+        item && item.hasOwnProperty("quantity")
+          ? state.items[action.payload.id]?.quantity + 1
+          : 1;
+      state.items[action.payload.id] = { ...action.payload, quantity };
+      state.totalItemsCount = state.totalItemsCount + 1;
     },
-    clearCart:(state)=>{
-        state.items=[]
+    removeItem: (state, action) => {
+      const item = state.items[action.payload];
+      if (!item) return;
+      if (item.quantity > 1) {
+        item.quantity -= 1;
+        state.totalItemsCount--;
+      } else {
+        state.totalItemsCount--;
+        delete state.items[action.payload];
+      }
     },
-    removeItems:(state,action)=>{
-        state.items.pop();
+    clearCart: (state) => {
+      state.items = {};
+      state.totalItemsCount = 0;
+    },
+    updateDeliveryAddress: (state, action) => {
+      state.deliveryAddress = action.payload;
+    },
+    updatePaymentMethod: (state, action) => {
+      state.paymentMethod = action.payload;
     },
   },
 });
 
-export const {addItems,clearCart,removeItems} = cartSlice.actions;
+export const {
+  addItem,
+  removeItem,
+  clearCart,
+  updateDeliveryAddress,
+  updatePaymentMethod,
+} = cartSlice.actions;
 
-export default cartSlice.reducer
+export default cartSlice.reducer;

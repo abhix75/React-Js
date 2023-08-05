@@ -1,37 +1,46 @@
 import { useState, useEffect } from "react";
-import { FETCH_MENU } from "../constant";
-const useRestaurant = (id) => {
-  const [restaurant, setRestaurant] = useState(null);
-  const [restaurantmenu, setRestaurantMenu] = useState(null);
-  const [offers, setOffers] = useState(null);
+import { GET_RESTAURANT_MENU} from "../config";
+
+import { restaurantMenu } from '../config';
+
+const useRestaurant = (resId) => {
+  const [restaurant, setRestaurant] = useState(null); 
+
   useEffect(() => {
     getRestaurantInfo();
   }, []);
 
-  async function getRestaurantInfo() {
+  const getRestaurantInfo = async () => {
     try {
-      const data = await fetch(FETCH_MENU + id);
-      const json = await data.json();
-      console.log(json.data);
-      setRestaurant(json?.data?.cards[0]?.card?.card.info);
-      console.log(
-        "Menus",
-        Object.values(
-          json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
-            .itemCards
-        )
-      );
-      setRestaurantMenu(
-        json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
-          .itemCards
-      );
-      setOffers(json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.offers);
-    } catch (error) {
-      console.error("Error fetching restaurant data:", error);
-    }
-  }
+      /* Live Data */
+      const response = await fetch(GET_RESTAURANT_MENU + resId);
+      const res_data = await response.json();
+      const menuItemsList = res_data.data.cards[2]["groupedCard"].cardGroupMap.REGULAR.cards;
+      const itemCategory = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
+      const NestedItemCategory = "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory";
 
-  return { restaurant, restaurantmenu,offers };
-};
+      /* Mock Data */
+      //const res_data =  restaurantMenu;
+
+      const menu = menuItemsList.map(item => {
+        if((item.card.card["@type"] === itemCategory) || (item.card.card["@type"] === NestedItemCategory) ) {
+          return item.card.card;
+        }
+      })
+
+      const modifiedData = {
+        info : res_data.data.cards[0].card.card.info,
+        menu : menu.filter(value => value !== undefined)
+      };
+
+      setRestaurant(modifiedData)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  return restaurant;
+
+}
 
 export default useRestaurant;

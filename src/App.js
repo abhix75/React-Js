@@ -1,84 +1,155 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
-//default Import
-import Header from "./component/Header.js";
-import Body from "./component/Body.js";
-import Footer from "./component/Footer.js";
-import Error from "./component/Error.js";
-import Contact from "./component/contact.js";
-import RestaurantMenu from "./component/RestaurantMenu.js";
-import Profile from "./component/ProfileClass.js";
+
+//Routing
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import { Shimmer } from "react-shimmer";
+
+// Redux
 import { Provider } from "react-redux";
-import store from "./utils/store.js";
-import Cart  from "./component/Cart.js";
+import store from "./utils/store";
 
-const Instamart = lazy(() => import("./component/Instamart"));
-const About = lazy(() => import("./component/About.js"));
-//Body
+//Authentication
+import { AuthContextProvider } from "./utils/context/AuthContext.js";
+import SignIn from "./components/Signin";
+import SignUp from "./components/SignUp";
 
-const AppLayout = () => {
+//Components
+import * as MainHeader from "./components/Header"; /* Imported using import * as namespace  */
+import Body from "./components/Body"; /* Imported using default export */
+import { Footer as MainFooter } from "./components/Footer"; /* Imported using Named Import Map */
+import Profile from "./components/Profile";
+import Error from "./components/Error";
+import Contact from "./components/Contact";
+import Cart from "./components/Cart";
+import RestaurantMenu from "./components/RestaurantMenu";
+import PaymentPage from "./components/PaymentPage";
+import OrderSummary from "./components/OrderSummary";
+import Shimmer from "./components/Shimmer";
+import RestaurantDetails from "./components/RestaurantDetails";
+
+/* import Instamart from "./components/Instamart";  
+On Demand loading
+*/
+const Instamart = lazy(() => import("./components/Instamart"));
+const About = lazy(() => import("./components/About"));
+const Help = lazy(() => import("./components/help"));
+
+const App = () => {
   return (
     <Provider store={store}>
-      <Header />
-      <Outlet />
-      <Footer />
+      <AuthContextProvider>
+        <Outlet />
+      </AuthContextProvider>
     </Provider>
   );
 };
 
-const approuter = createBrowserRouter([
+const AppLayout = () => {
+  return (
+    <>
+      <MainHeader.Header />
+      <Outlet />
+      <MainFooter />
+    </>
+  );
+};
+
+const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <AppLayout />,
+    element: <App />,
     errorElement: <Error />,
     children: [
       {
         path: "/",
-        element: <Body user={{
-          name:"Abhijit Food HUB",
-          email:"abhijitmishraak10@gmail.com"
-        }}/>,
-      },
-      {
-        path: "/about",
-        element: (
-          <Suspense fallback={<Shimmer />}>
-            <About />
-          </Suspense>
-        ),
+        element: <AppLayout />,
+        errorElement: <Error />,
         children: [
           {
-            path: "profile",
-            element: <Profile />,
+            path: "/about",
+            element: (
+              <Suspense
+                fallback={
+                  <div className="container">
+                    <h1>Loading...</h1>
+                  </div>
+                }
+              >
+                {" "}
+                <About />
+              </Suspense>
+            ),
+            children: [
+              {
+                path: "profile",
+                element: <Profile />,
+              },
+            ],
+          },
+          {
+            path: "/contact",
+            element: <Contact />,
+          },
+          {
+            path: "/cart",
+            element: <Cart />,
+          },
+          {
+            path: "/payment",
+            element: <PaymentPage />,
+          },
+          {
+            path: "/ordersummary",
+            element: <OrderSummary />,
+          },
+          {
+            path: "/",
+            element: <Body />,
+          },
+          {
+            path: "/restaurant/:resId",
+            element: <RestaurantDetails />,
+          },
+          {
+            path: "/instamart",
+            element: (
+              <Suspense fallback={<Shimmer />}>
+                {" "}
+                <Instamart />
+              </Suspense>
+            ),
+          },
+          {
+            path: "/help",
+            element: (
+              <Suspense
+                fallback={
+                  <div className="container">
+                    <h1>Loading...</h1>
+                  </div>
+                }
+              >
+                {" "}
+                <Help />
+              </Suspense>
+            ),
           },
         ],
       },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/signin",
+        element: <SignIn />,
+        errorElement: <Error />,
       },
       {
-        path: "/restaurant/:id",
-        element: <RestaurantMenu />,
+        path: "/signup",
+        element: <SignUp />,
+        errorElement: <Error />,
       },
-      {
-        path: "/instamart",
-        element: (
-          <Suspense fallback={<Shimmer />}>
-            <Instamart />
-          </Suspense>
-        ),
-      },
-      {
-        path:"/cart",
-        element: <Cart/>,
-      }
     ],
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<RouterProvider router={approuter} />);
+root.render(<RouterProvider router={appRouter} />);
