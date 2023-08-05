@@ -5,6 +5,7 @@ import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
 import {filterData} from "../utils/helper"
 import useOnline from "../utils/useOnline";
+
 const Body = ({user}) => {
   const [allrestaurant, setAllrestaurant] = useState([]);
   const [filterrestaurants, setFilterRestaurants] = useState([]);
@@ -16,12 +17,13 @@ const Body = ({user}) => {
 
   async function getRestaurant() {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.2960587&lng=85.8245398&page_type=DESKTOP_WEB_LISTING"
+      " https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.2960587&lng=85.8245398&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
-    console.log(json);
-    setFilterRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    setAllrestaurant(json?.data?.cards[2]?.data?.data?.cards);
+    console.log("Fetch Restaurant",json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setFilterRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      );
+    setAllrestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
   const isonline=useOnline();
   if(!isonline){
@@ -41,7 +43,7 @@ const Body = ({user}) => {
       <div className= "bg-pink-50 shadow-lg p-5 my-2 ">
         <input
           type="text"
-          className="search-input focus:bg-pink-200"
+          className="search-input"
           placeholder="Search"
           value={SearchTxt}
           onChange={(e) => setSearchTxt(e.target.value)}
@@ -58,15 +60,18 @@ const Body = ({user}) => {
           Search
         </button>
       </div>
-      <div className="flex flex-wrap">
+      <div className="p-5 flex flex-wrap bg-pink-50 shadow-lg ">
         {filterrestaurants.map((restaurant) => {
+          console.log("Restaurant ",restaurant.info.id)
           return (
+            
             <Link
-              to={"/restaurant/" + restaurant.data.id}
-              key={restaurant.data.id}
+            
+              to={"/restaurant/" + restaurant.info.id}
+              key={restaurant.info.id}
             >
               {" "}
-              <RestaurantCard {...restaurant.data} user={user} />
+              <RestaurantCard {...restaurant.info} user={user} />
             </Link>
           );
         })}

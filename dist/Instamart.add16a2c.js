@@ -604,72 +604,112 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Section = ({ title, description })=>{
+    _s();
+    const [isVisible, setIsVisible] = (0, _react.useState)(false);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "border border-black m-2 p-2",
+        className: " mx-10 m-1 p-2 border-2 border-black",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                className: "font-bold text-xl",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: " text-xl border-2 font-semibold px-11 m-2 border-black",
                 children: title
             }, void 0, false, {
                 fileName: "src/component/Instamart.js",
-                lineNumber: 6,
+                lineNumber: 8,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: " border-2 p-1 border-blue-500",
+                onClick: ()=>setIsVisible(false),
+                children: "HIDE"
+            }, void 0, false, {
+                fileName: "src/component/Instamart.js",
+                lineNumber: 11,
+                columnNumber: 20
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: " border-2 p-1 border-blue-500",
+                onClick: ()=>setIsVisible(true),
+                children: "SHOW"
+            }, void 0, false, {
+                fileName: "src/component/Instamart.js",
+                lineNumber: 13,
+                columnNumber: 21
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: " m-1 p-1 ",
                 children: description
             }, void 0, false, {
                 fileName: "src/component/Instamart.js",
-                lineNumber: 7,
-                columnNumber: 7
+                lineNumber: 16,
+                columnNumber: 21
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/Instamart.js",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 10
     }, undefined);
 };
+_s(Section, "QjDZesRvLCmcrZLxgN677nXnVLA=");
 _c = Section;
 const Instamart = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: " flex flex-col ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "font-bold text-3xl",
-                children: "InstaMart"
+                className: " m-8 px-16 text-2xl font-semibold",
+                children: "Instamart"
             }, void 0, false, {
                 fileName: "src/component/Instamart.js",
-                lineNumber: 12,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 title: "About Instamart",
-                description: "Hey budddy cjfsfvnvdshvsivsahfwofusdnmdiobjpfiafsb,ndihawp0i;fjdvbuPDISDKVHBFOOFIWFLJSIUWEFIASLSDUVHWEIDQPkdjdsjhbvoidsdjASHQEID BQSOSIOHDISHVP KVMA DFPBI   DKIVODQ HF I 'FBIWFDM NIHQD"
+                description: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
             }, void 0, false, {
                 fileName: "src/component/Instamart.js",
-                lineNumber: 13,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 title: "Team Instamart",
-                description: "skbakhfasfsldjlsdjlsjnlsjlsjmflsensnfsdnlsenvlsenlsenlsnvlsenflsnflasnf"
+                description: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
             }, void 0, false, {
                 fileName: "src/component/Instamart.js",
-                lineNumber: 14,
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "Details Instamart",
+                description: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+            }, void 0, false, {
+                fileName: "src/component/Instamart.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "Product Instamart",
+                description: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+            }, void 0, false, {
+                fileName: "src/component/Instamart.js",
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 title: "Career Instamart",
-                description: "bfdbfjhfkfjksnfksnfksnkanakn"
+                description: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
             }, void 0, false, {
                 fileName: "src/component/Instamart.js",
-                lineNumber: 15,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/component/Instamart.js",
-        lineNumber: 11,
+        lineNumber: 20,
         columnNumber: 10
     }, undefined);
 };
@@ -684,6 +724,6 @@ $RefreshReg$(_c1, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["a6vPU","1xC6H"], null, "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["a6vPU","1xC6H"], null, "parcelRequire164e")
 
 //# sourceMappingURL=Instamart.add16a2c.js.map
